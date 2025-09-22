@@ -97,13 +97,20 @@ class MainWindow(QtWidgets.QMainWindow):
             self.tab_widget.setTabText(4, "关于")
             self.statusBar().showMessage("就绪")
             self.setWindowTitle("SecretFlasherManaka-Mod管理器")
-        # 允许各页自行刷新文案
-        for tab in (self.mod_manager_tab, self.json_editor_tab, self.json_creator_tab, self.settings_tab, self.about_tab):
-            if hasattr(tab, "retranslate"):
-                try:
-                    tab.retranslate(lang)
-                except Exception:
-                    pass
+        # 允许各页自行刷新文案 — 更鲁棒的实现：遍历 tab_widget 中的实际页面并调用 retranslate
+        if hasattr(self, "tab_widget") and self.tab_widget is not None:
+            try:
+                for i in range(self.tab_widget.count()):
+                    tab = self.tab_widget.widget(i)
+                    if hasattr(tab, "retranslate"):
+                        try:
+                            tab.retranslate(lang)
+                        except Exception:
+                            # 单页面重译失败不影响其它页面
+                            pass
+            except Exception:
+                # 保底：若遍历失败，则忽略，避免抛出到调用方
+                pass
 
 
 def create_app() -> QtWidgets.QApplication:

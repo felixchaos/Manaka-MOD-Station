@@ -367,3 +367,4 @@ FodyWeavers.xsd
 tools/
 database/CustomMissions/
 update/
+*.spec

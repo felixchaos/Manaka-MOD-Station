@@ -67,7 +67,7 @@ def check_for_updates_github(repo: str, current_version: str, timeout: int = 10)
     latest_tag = data.get("tag_name") or data.get("name")
     assets = []
     for a in data.get("assets", []):
-        assets.append(ReleaseAsset(name=a.get("name"), url=a.get("browser_download_url")))
+        assets.append({"name": a.get("name"), "url": a.get("browser_download_url")})
 
     update_available = _is_newer(latest_tag, current_version)
     return {"update_available": update_available, "latest_version": latest_tag, "assets": assets}
