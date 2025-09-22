@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<WixLocalization xmlns="http://wixtoolset.org/schemas/v4/wxl" Culture="zh-CN">
-  <String Id="AppName" Value="Manaka-Mod管理器" Overridable="yes" />
-  <String Id="Manufacturer" Value="Practice Team" Overridable="yes" />
-  <String Id="LaunchText" Value="安装完成后立即运行 Manaka-Mod管理器" Overridable="yes" />
-  <String Id="SupportEmail" Value="support@example.com" Overridable="yes" />
-  <String Id="HomepageUrl" Value="https://example.com/practice" Overridable="yes" />
-</WixLocalization>
