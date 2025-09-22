@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# 本地提示词文件夹（不同步到远程仓库）
+提示词/
