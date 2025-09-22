@@ -1,0 +1,32 @@
+{
+	"title":"r4",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+			"id":"p1",
+			"areas":[
+			{"type":"sphere","stage":"Park", "x":111.62, "y":49.01, "z":43.13, "r":4.3, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"Park", "x":115.32, "y":49.01, "z":43.08, "r":4.2, "outlinehidden":true, "compasshidden":true}
+			
+			]
+		}
+        
+	],
+	"checkpoints":
+	[
+
+        {
+			"zone":"p1",
+					"condition": {
+						"rp": 200,
+						"duration": 120.0,
+						"hidepanel": "IfNotCondition",
+						"description": "在白天迷宫的中央房间内，以裸体蒙眼状态进行分腿行走2分钟且不可中断.",
+						"condition": "[Naked,Blindfolded,IsDayTime,Action_GanimataWalk]",
+						"reset": true
+					}
+		}
+	]
+}

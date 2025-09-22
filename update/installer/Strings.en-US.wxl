@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WixLocalization xmlns="http://wixtoolset.org/schemas/v4/wxl" Culture="en-US">
+  <String Id="AppName" Value="PracticeApp" Overridable="yes" />
+  <String Id="Manufacturer" Value="Practice Team" Overridable="yes" />
+  <String Id="LaunchText" Value="Launch PracticeApp after setup completes" Overridable="yes" />
+  <String Id="SupportEmail" Value="support@example.com" Overridable="yes" />
+  <String Id="HomepageUrl" Value="https://example.com/practice" Overridable="yes" />
+</WixLocalization>

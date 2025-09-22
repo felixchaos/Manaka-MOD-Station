@@ -1,0 +1,24 @@
+{
+	"title":"10FWarp",
+	"zones":[
+		{
+			"id":"Apartment_Start",
+			"areas":[{"type":"sphere","stage":"Mansion", "x":20.66, "y":-0.11, "z":160.86, "r":0.4, "outlinehidden":false, "compasshidden":true}]
+		}
+	],
+	"checkpoints":
+	[
+		{
+			"zone":"Apartment_Start",
+			"condition":
+			{
+				"description":"传送至顶楼",
+				"duration":3,
+				"condition":"[Action_None]",
+				"oncomplete":[
+                    {"type":"setPlayerPosition", "x":42.99, "y":22.70, "z":154.56, "rx":0.00000, "ry":0.999983, "rz":0.00000, "rw":0.00611}
+				]
+			}
+		}
+	]
+}

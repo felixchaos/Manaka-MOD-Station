@@ -1,0 +1,73 @@
+{
+	"title" : "领地",
+	"listmission" : true,
+	"addtitleinlist":true,
+	"addtitleinpanel":true,
+	"zones" : 
+	[
+		{
+			"id" : "outside",
+			"areas" : [{"type":"sphere","stage":"Residence", "x":0, "y":0, "z":0, "r":500,"compasshidden":true}]
+		},
+		{
+			"id" : "Prog",
+			"areas" : [{"type":"sphere","stage":"Apart", "x":0, "y":10, "z":0, "r":0.5,"compasshidden":true, "outlinehidden":true}]
+		}
+	],
+	"subconditions" : 
+	[
+		{
+			"id" : "inCos",
+			"condition" : "[Naked,(Cosplay_m_cosplay_general_genital_rubbit_tail,Cosplay_m_cosplay_general_genital_tail_plug,Cosplay_m_cosplay_kemono_tail,Cosplay_m_cosplay_latex_pony_tail,Cosplay_m_cosplay_cow_tail),(Cosplay_m_cosplay_kemono_ear_cat,Cosplay_m_cosplay_kemono_ear_fox,Cosplay_m_cosplay_bunny_ear,Cosplay_m_cosplay_latex_pony_ear,Cosplay_m_cosplay_cow_hair_band)]"
+		}
+	],
+	"checkpoints" : 
+	[	
+		{"zone": "outside"},
+		{
+			"zone" : "outside",
+			"condition" : 
+			{
+				"description" : "从所有自动售货机购买饮料并标记为您的领地",
+				"rp" : 75,
+				"hidepanel" : "IfNotCondition",
+				"condition" : "[SubCondition_inCos,IsDayTime]",
+				"duration" : 12,
+				"reset" : false,
+				"itemconditions" :[{"type" : "coat","zone" : "Prog"}]
+			}
+		},
+		{
+			"zone" : "outside",
+			"condition" : {
+				"description" : "所有机器已标记完成!",
+				"condition" : "[SubCondition_inCos,IsDayTime]",
+				"duration" : 3.1,
+				"oncomplete":[
+					{"type":"dropItem", "itemtype":"Coat", "stage":"Apart", "x":0, "y":5, "z":0, "compasshidden":false}
+				]
+			}
+		},
+		{
+			"zone" : "outside",
+			"condition" : {
+				"description" : "成功!",
+				"duration" : 1,
+				"oncomplete":[
+					{"type":"dropItem", "itemtype":"Coat", "stage":"Apart", "x":0, "y":0, "z":0, "compasshidden":false}
+				]
+			}
+		},
+		{
+			"zone" : "outside",
+			"condition" : 
+			{
+				"description" : "完成!",
+				"condition" : "",
+				"duration" : 10,
+				"reset" : false
+			}
+		}	
+	]
+}
+

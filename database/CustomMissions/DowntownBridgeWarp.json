@@ -1,0 +1,24 @@
+{
+	"title":"Park Toilet Warp",
+	"zones":[
+		{
+			"id":"Downtown_WarpEntrance",
+			"areas":[{"type":"sphere","stage":"StationFront", "x":-225.83, "y":0.18, "z":-62.99, "r":0.5, "outlinehidden":false, "compasshidden":true}]
+		}
+	],
+	"checkpoints":
+	[
+		{
+			"zone":"Downtown_WarpEntrance",
+			"condition":
+			{
+				"description":"传送至天桥",
+				"duration":3,
+				"condition":"[Action_None]",
+				"oncomplete":[
+					{"type":"setPlayerPosition", "x":-244.93, "y":0.27, "z":-7.70, "rx":0.00000, "ry":-0.37702, "rz":0.00000, "rw":0.92620 }
+				]
+			}
+		}
+	]
+}

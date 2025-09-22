@@ -1,0 +1,36 @@
+{
+	"title":"d5",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+			"id":"r4",
+			"areas":[
+			{"type":"sphere","stage":"Residence", "x":-9.48, "y":-0.11, "z":-78.83, "r":1.1, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"Residence", "x":-26.19, "y":-0.11, "z":-101.28, "r":1.1, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"Residence", "x":-17.26, "y":-0.11, "z":-73.38, "r":1.1, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"Residence", "x":-14.87, "y":-0.11, "z":-101.12, "r":1.1, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"Residence", "x":-5.18, "y":-0.11, "z":-101.34, "r":1.1, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"Residence", "x":8.57, "y":-0.11, "z":-102.35, "r":2.1, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"Residence", "x":9.13, "y":-0.11, "z":-79.05, "r":1.1, "outlinehidden":true, "compasshidden":true}
+			]
+		}
+        
+	],
+	"checkpoints":
+	[
+
+        {
+			"zone":"r4",
+					"condition": {
+						"rp": 110,
+						"duration": 45.0,
+						"hidepanel": "IfNotCondition",
+						"description": "在裸体状态下于三岔路口中心进行自慰或使用按摩棒.",
+						"condition": "[Naked,(Action_MituasiOnani,Action_OnaniNormal,Action_OnaniNeGanimata,Action_OnaniSikoru,Action_OnaniYotuashi,Action_OnaniArmKuri,Action_UseDildoFloorPussy1,Action_UseDildoFloorAnal1,Action_UseDildoWallPussy1,Action_UseDildoWallAnal1,Action_UseDildoWallFella1,Action_SitDildo)]",
+						"reset": false
+					}
+		}
+	]
+}

@@ -1,0 +1,386 @@
+{
+    "title":"Toilet Trouble",
+	"listmission":true,
+    "addtitleinlist":true,
+    "addtitleinpanel":true,
+    "zones":
+	[	{
+			"id":"start",
+			"areas":[{"type":"sphere","stage":"Park", "x":116.46, "y":49.03, "z":108.21, "r":1.5, "outlinehidden":false, "compasshidden":false}]
+		},
+		{
+			"id":"park",
+			"areas":[{"type":"sphere","stage":"Park", "x":75.5, "y":52.06, "z":83.5, "r":200, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"frontarea",
+			"areas":[{"type":"sphere","stage":"Park", "x":116.77, "y":49.02, "z":125.39, "r":2, "outlinehidden":true, "compasshidden":true}]
+		},
+		{
+			"id":"maletoilet",
+			"areas":[{"type":"sphere","stage":"Park", "x":121.93, "y":49.02, "z":124.62, "r":1, "outlinehidden":true, "compasshidden":true}]
+		},
+		{
+			"id":"maletoiletcorner",
+			"areas":[{"type":"sphere","stage":"Park", "x":119.97, "y":49.02, "z":125.4, "r":0.5, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"maleendtoilet",
+			"areas":[{"type":"sphere","stage":"Park", "x":124.91, "y":49.02, "z":123.2, "r":0.5, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"maleendtoilethidden",
+			"areas":[{"type":"sphere","stage":"Park", "x":124.91, "y":49.02, "z":123.2, "r":1, "outlinehidden":true, "compasshidden":true}]
+		},
+		{
+			"id":"behindbathroom",
+			"areas":[{"type":"sphere","stage":"Park", "x":126.05, "y":49.06, "z":121.87, "r":0.5, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"vendingmachine",
+			"areas":[{"type":"sphere","stage":"Park", "x":90.28, "y":51.02, "z":111.73, "r":2, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"femaletoilet",
+			"areas":[{"type":"sphere","stage":"Park", "x":123.36, "y":49.06, "z":119.89, "r":3, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"finish",
+			"areas":[{"type":"sphere","stage":"Residence", "x":-29.07, "y":-0.11, "z":-117.23, "r":2, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"finishbig",
+			"areas":[{"type":"sphere","stage":"Residence", "x":-29.07, "y":-0.11, "z":-117.23, "r":20, "outlinehidden":true, "compasshidden":true}]
+		},
+		{
+			"id":"topofhill",
+			"areas":[{"type":"sphere","stage":"Park", "x":100.35, "y":53.2, "z":109.89, "r":1, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"topofhilllarge",
+			"areas":[{"type":"sphere","stage":"Park", "x":100.35, "y":53.2, "z":109.89, "r":30, "outlinehidden":true, "compasshidden":true}]
+		}
+	],
+	"subconditions":
+	[
+		{
+			"id":"startConditions",
+			"condition": "!(Crouching,HandcuffsBack,Blindfolded,Bodypaint,Futanari,VibrationHigh,PistonHigh)"
+		},
+		{
+			"id":"nakedandvibe",
+			"condition": "[Naked,(VibrationHigh,VibrationLow,VibrationRandom),AdultToy_Vibrator]"
+		},
+		{
+			"id":"peeing",
+			"condition":"(Action_PeeStand,Action_PeeDog,Action_PeeKaikyaku,Peeing)"
+		}
+	],
+    "checkpoints":
+	[
+		{
+			"zone":"start",
+			"condition":
+			{
+				"description":"任务：午夜水逆(非扶她状态) 今晚，我终于要踏出那一步了。男厕的门后，是未知的边界——我将褪去伪装，只留下跳动的心与赤裸的勇气。害怕？当然。不过兴奋早已淹没了恐惧...",
+				"duration":1,
+				"oncomplete":[
+				{"type":"collectItem", "itemtype":"Coat", "stage":"Park", "x":116.46, "y":49.03, "z":108.21},
+				{"type":"collectItem", "itemtype":"VibeRemocon", "stage":"Park", "x":116.46, "y":49.03, "z":108.21}
+				],
+				"hideprogress":true
+			}
+		},
+		{
+			"zone":"start",
+			"condition":
+			{
+				"description":"今晚，我终于要踏出那一步了。男厕的门后，是未知的边界——我将褪去伪装，只留下跳动的心与赤裸的勇气。害怕？当然。不过兴奋早已淹没了恐惧...",
+				"duration":8,
+				"condition":"[SubCondition_startConditions]"
+			}
+		},
+		{
+			"zone":"start",
+			"condition":
+			{
+				"description":"是时候戴上我的太阳能震动器了，今晚想来些不一样的‘甜点’",
+				"duration":1,
+				"condition":"[AdultToy_Vibrator]"
+			}
+		},
+		{
+			"zone":"start",
+			"condition":
+			{
+				"description":"先调到低档就好。",
+				"duration":1,
+				"condition":"[AdultToy_Vibrator,VibrationLow]"
+			}
+		},
+		{
+			"zone":"maletoiletcorner",
+			"travelcondition":
+			{
+				"description":"真菜香，深呼吸，你能做到的。轻手轻脚地潜入男厕所，别让任何人察觉。",
+				"condition":"[AdultToy_Vibrator,VibrationLow]",
+				"hideprogress":false
+			},
+			"condition":
+			{
+				"duration": 0,
+				"description":"深吸一口气……一切准备就绪。外套轻轻脱下，振动器调到随机模式，然后把控制器悄悄藏进外套口袋。",
+				"condition":"[AdultToy_Vibrator,VibrationRandom,Naked]",
+				"itemconditions":[{"type":"Coat","zone":"maletoiletcorner"},{"type":"VibeRemocon","zone":"maletoiletcorner"}]
+			}
+			
+		},
+		{
+			"zone":"maleendtoilet",
+			"travelcondition":
+			{
+				"description":"快跑！钻进最后一个隔间，赶紧关门！",
+				"condition":"[AdultToy_Vibrator,VibrationRandom,Naked]",
+				"hideprogress":false
+			},
+			"condition":
+			{
+				"description":"关上门！",
+				"duration": 2,
+				"condition":"![InOpenToilet]"
+			}
+		},
+		{
+			"zone":"maleendtoilethidden",
+			"condition":
+			{
+				"description":"唉！！！重大事故！我忘了给太阳能振动器充电，它快没电了！！！劲儿都没了！",
+				"duration": 3,
+				"oncomplete":[
+				{"type":"dropItem", "itemtype":"Coat", "stage":"Apart", "x":1.8, "y":0, "z":0.5},
+				{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Apart", "x":1.8, "y":0, "z":0.5},
+				{"type":"setVibrator", "level":"Low"}
+				]
+			}
+		},
+		{
+			"zone":"maleendtoilethidden",
+			"condition":
+			{
+				"description":"真没想到我也能干出这种事……行吧，管他呢！现在，就该好好享受一下来上一次！我都等不及了。",
+				"duration": 2,
+				"condition":"[SubCondition_nakedandvibe,Orgasm]"
+			}
+		},
+		{
+			"zone":"maleendtoilethidden",
+			"condition":
+			{
+				"description":"这种感觉太顶级了，简直刻入骨髓！我上瘾了，现在就想要再来一次，一秒都等不了！这次，我会用随身带来的那个假阳具。",
+				"duration": 2,
+				"condition":"[Orgasm,(Action_UseDildoWallPussy1,Action_UseDildoWallAnal1,Action_UseDildoWallFella1,Action_SitDildo,Action_UseDildoFloorPussy1,Action_UseDildoFloorAnal1)]"
+			}
+		},
+		{
+			"zone":"maleendtoilethidden",
+			"condition":
+			{
+				"description":"太美妙了！但还不够！我要打开这扇门，让规则见鬼去吧！这自由的快感，我才刚刚尝到！",
+				"duration": 2,
+				"condition":"[SubCondition_nakedandvibe,Orgasm,InOpenToilet]"
+			}
+		},
+		{
+			"zone":"maletoiletcorner",
+			"travelcondition":
+			{
+				"description":"呼，这真是场消耗战。该把东西收好，赶紧离开这里了。",
+				"hideprogress":false
+			},
+			"condition":
+			{
+				"duration": 0
+			}
+		},
+		{
+			"zone":"maleendtoilet",
+			"travelcondition":
+			{
+				"description":"糟糕！有人拿走了我的东西！我得赶紧躲回隔间，别被人发现！",
+				"condition":"[SubCondition_nakedandvibe]",
+				"hideprogress":false
+			},
+			"condition":
+			{
+				"description":"关上门！",
+				"duration": 2,
+				"condition":"![InOpenToilet]"
+			}
+		},
+		{
+			"zone":"frontarea",
+			"travelcondition":
+			{
+				"description":"冷静点！也许有人把东西挪到外面了？我得去看看，但无论如何都不能被发现！"
+			},
+			"condition":{
+				"duration":5,
+				"description":"不妙，我哪儿也找不到我的外套！"
+			}
+		},
+		{
+			"zone":"behindbathroom",
+			"travelcondition":
+			{
+				"description":"我得躲到厕所后面，冷静想想该怎么办！"
+			},
+			"condition":{
+				"duration":10,
+				"description":"糟了，糟了，糟了！必须回家换套新衣服！可我真的太累了……慢慢呼吸，冷静下来……"
+			}
+		},
+		{
+			"id":"vend",
+			"zone":"vendingmachine",
+			"travelcondition":{
+				"description":"算了，回家没戏了，实在太累。我得赤裸着去自动贩卖机买瓶能量饮料……（咽了口口水）"
+			},
+			"condition":
+			{
+				"description":"算了，回家没戏了，实在太累。我得赤裸着去自动贩卖机买瓶能量饮料……（咽了口口水）",
+				"condition":"[Action_UseBuyMachine]",
+				"duration":7,
+				"onmetcondition":[{"type":"setVibrator", "level":"Random"}]
+			}
+		},	
+		{
+			"zone":"topofhill",
+			"travelcondition":{
+				"description":"灯光居然给我的振动器充上电了！不过没时间耽搁，得马上躲到一边树林里去！"
+			},
+			"condition":
+			{
+				"description":"我好累，浑身又热得发烫，或许我需要先让自己冷静下来？",
+				"condition":"!(Action_OnaniArmKuri,Action_ChikubiRotate,Action_OnaniYotuashi,Action_OnaniNeGanimata,Action_MituasiOnani,Action_OnaniNormal)",
+				"duration":8,
+				"onviolatecondition":[{"type":"setCheckpoint", "selectortype":"SpecificId", "id":"passout"}]
+			}
+		},
+		{
+			"zone":"topofhill",
+			"condition":
+			{
+				"description":"筋疲力尽，必须赶快喝下这口水！",
+				"condition":"[Action_DrinkWater]",
+				"duration":3,
+				"oncomplete":[{"type":"setVibrator", "level":"High"}]
+			}
+		},
+		{
+			"zone":"femaletoilet",
+			"travelcondition":
+			{
+				"description":"我喝得太快了，有点尿急！得赶紧去女厕所！",
+				"condition":"![Peeing]",
+				"onviolatecondition":[
+				{"type":"setCheckpoint", "selectortype":"SpecificId", "id":"missedtoilet"}
+				],
+				"hideprogress":false
+			},
+			"condition":
+			{
+				"description":"快进入一个隔间，没时间关门了！",
+				"condition":"[InOpenToilet]",
+				"duration":1,
+				"onmetcondition":[{"type":"setVibrator", "level":"Low"}],
+				"onviolatecondition":[{"type":"setCheckpoint", "selectortype":"SpecificId", "id":"missedtoilet"}]
+			}
+		},
+		{		
+			"zone":"femaletoilet",
+			"condition":
+			{
+				"description":"撒尿！",
+				"condition":"[Peeing]",
+				"duration":8,
+				"oncomplete":[{"type":"setVibrator", "level":"Off"}]
+			}
+		},
+		{		
+			"zone":"femaletoilet",
+			"condition":
+			{
+				"description":"看来我的振动器短路了……不过这至少让我回家的路上轻松点了。",
+				"duration":6
+			},
+			"nextcheckpoint":{"selectortype":"SpecificId", "id":"gethome"}
+		},
+		
+		
+		{
+			"id":"missedtoilet",
+			"zone":"park",
+			"condition":
+			{
+				"description":"我去厕所太慢了，竟然尿湿了自己！振动器也开始疯狂作响了！",
+				"duration":8,
+				"condition":"[Naked]",
+				"onmetcondition":[{"type":"setVibrator", "level":"Random"}],
+				"hideprogress":true
+			},
+			"nextcheckpoint":{"selectortype":"SpecificId", "id":"gethome"}
+		},
+		
+		
+		{
+			"id":"passout",
+			"zone":"park",
+			"condition":
+			{
+				"description":"嗯?",
+				"duration":1,
+				"oncomplete":[
+				{"type":"setStage", "daytime":true},
+				{"type":"setPlayerPosition", "x":100.43, "y":53.13, "z":110.51, "ry":0.31691, "rw":0.94846}
+				],
+				"hideprogress":true
+			}
+		},
+		{
+			"zone":"topofhilllarge",
+			"condition":
+			{
+				"description":"我太累了，肯定是昏过去了，现在太阳都升起了！",
+				"duration":8
+			}
+		},
+		{
+			"zone":"topofhilllarge",
+			"condition":
+			{
+				"description":"我的太阳能振动器现在也充满电了！",
+				"duration":8,
+				"onmetcondition":[
+				{"type":"setVibrator", "level":"Random"}
+				]
+			}
+		},
+
+		{
+			"id":"gethome",
+			"zone":"finish",
+			"travelcondition":{
+				"description":"衣服估计已经被人拿走了，希望他不会做奇怪的事，继续留在这也没什么用了，我得撑到家，赶紧回家换套备用衣服！",
+				"condition":"[Naked]"
+			},
+			"condition":{
+				"description":"我做到了！没被发现，简直难以置信……这刺激感，太不真实了，我现在手都是麻的。",
+				"duration": 10
+			}
+		}
+	]
+}
+
+
+
+

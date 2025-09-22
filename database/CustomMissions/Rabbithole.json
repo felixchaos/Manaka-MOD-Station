@@ -1,0 +1,156 @@
+{
+	"title":"Rabbit hole",
+	"listmission":true,
+    "addtitleinlist":true,
+    "addtitleinpanel":true,
+	"zones":[
+		{
+			"id":"frontyard",
+			"areas":[{"type":"sphere","stage":"Mansion", "x":18.03, "y":-0.1, "z":159.40, "r":1.7,"outlinehidden":true,"compasshidden":true}]
+		},
+		{
+			"id":"house",
+			"areas":[{"type":"sphere","stage":"Mansion", "x":24.25, "y":-0.09, "z":152.71, "r":1.0,"outlinehidden":false}]
+		},
+		{
+			"id":"1F",
+			"areas":[{"type":"sphere","stage":"Mansion", "x":40.67, "y":0.02, "z":145, "r":1.3,"outlinehidden":true}]
+		},
+		{
+			"id":"10F",
+			"areas":[{"type":"sphere","stage":"Mansion", "x":40.67, "y":22.70, "z":145, "r":1.3,"outlinehidden":true}]
+		},
+		{
+			"id":"F",
+			"areas":[{"type":"sphere","stage":"Mansion", "x":40.67, "y":22.70, "z":147.47, "r":1.0,"outlinehidden":true,"compasshidden":true},
+			{"type":"sphere","stage":"Mansion", "x":40.67, "y":20.19, "z":147.47, "r":1.0,"outlinehidden":true,"compasshidden":true},
+			{"type":"sphere","stage":"Mansion", "x":40.67, "y":17.67, "z":147.47, "r":1.0,"outlinehidden":true,"compasshidden":true},
+			{"type":"sphere","stage":"Mansion", "x":40.67, "y":15.15, "z":147.47, "r":1.0,"outlinehidden":true,"compasshidden":true},
+			{"type":"sphere","stage":"Mansion", "x":40.67, "y":12.66, "z":147.47, "r":1.0,"outlinehidden":true,"compasshidden":true},
+			{"type":"sphere","stage":"Mansion", "x":40.67, "y":10.11, "z":147.47, "r":1.0,"outlinehidden":true,"compasshidden":true},
+			{"type":"sphere","stage":"Mansion", "x":40.67, "y":7.59, "z":147.47, "r":1.0,"outlinehidden":true,"compasshidden":true},
+			{"type":"sphere","stage":"Mansion", "x":40.67, "y":5.07, "z":147.47, "r":1.0,"outlinehidden":true,"compasshidden":true},
+			{"type":"sphere","stage":"Mansion", "x":40.67, "y":2.55, "z":147.47, "r":1.0,"outlinehidden":true,"compasshidden":true},
+			{"type":"sphere","stage":"Mansion", "x":40.67, "y":0.02, "z":147.47, "r":1.0,"outlinehidden":true,"compasshidden":true}]
+		}
+		],
+	"subconditions":[
+		{
+			"id":"cosplay",
+			"condition":"[Cosplay_m_cosplay_bunny_ear,Cosplay_m_cosplay_bunny_tops,Cosplay_m_cosplay_bunny_harness_top,Cosplay_m_cosplay_bunny_harness_under,Cosplay_m_cosplay_bunny_sockes,Cosplay_m_cosplay_bunny_shoes]"
+		},
+		{
+			"id":"VibrationHigh",
+			"condition":"[VibrationHigh,AdultToy_Vibrator,AdultToy_TitRotor,AdultToy_KuriRotor]"
+		}
+	],
+	"checkpoints":
+	[
+		{
+			"zone":"frontyard",
+			"condition":
+			{
+				"description":"任务启动：掉进兔子洞。 在公寓楼入口变身萌萌兔女郎，准备展开一场不可思议的冒险！",
+					"condition":"[SubCondition_cosplay]"
+			}
+		},
+		{
+			"zone":"house",
+			"travelcondition":
+			{
+				"description":"接着，蹦蹦跳跳穿过街道，前往公寓对面的那栋神秘小屋--别走错门哦～",
+				"condition":"[SubCondition_cosplay]"
+			},
+			"condition":
+			{
+				"description":"放下你的外套，脱掉伪装，切换成“裸感模式”，来点真·互动吧！",
+				"condition":"[Naked,SubCondition_cosplay]",
+				"itemconditions":[{"type":"Coat","zone":"house"}]
+			}
+		},
+		{
+			"zone":"house",
+			"condition":
+			{
+				"description":"最后，戴上你全部的震动装置，启动它，只开“最嗨模式”哦～别手软！",
+				"condition":"[Naked,SubCondition_cosplay,SubCondition_VibrationHigh]",
+				"itemconditions":[{"type":"Coat","zone":"house"}]
+			}
+		},
+		{
+			"zone":"house",
+			"condition":
+			{
+				"description":"乖，把震动器遥控器放下，这里由我来掌控～",
+				"condition":"[Naked,SubCondition_cosplay,SubCondition_VibrationHigh]",
+				"itemconditions":[{"type":"Coat","zone":"house"},{"type":"VibeRemocon","zone":"house"}]
+			}
+		},
+		{
+			"zone":"1F",
+			"travelcondition":
+			{
+				"description":"走进电梯，按下传说中的“10楼”——听说那里藏着秘密任务哦！",
+				"condition":"[Naked,SubCondition_cosplay,SubCondition_VibrationHigh]",
+				"itemconditions":[{"type":"Coat","zone":"house"},{"type":"VibeRemocon","zone":"house"}],
+				"onviolatecondition":[
+					{"type":"dropItem", "itemtype":"HandcuffKey", "stage":"Mansion", "x":24.25, "y":-0.09, "z":152.71, "compasshidden":false},
+					{"type":"equipAdultToy", "parts":["EyeMask","Vibrator","TitRotor","KuriRotor"]},
+					{"type":"lockHandcuffs", "handcuffstype":"KeyHandcuff", "attachtoobject":false, "duration":0 },
+					{"type":"setVibrator", "level":"High"}]
+			}
+		},
+		{
+			"zone":"10F",
+			"travelcondition":
+			{
+				"description":"快把手铐戴上，绑在电梯扶手上，游戏才刚刚开始！别想逃哦～",
+				"condition":"[Naked,SubCondition_cosplay,SubCondition_VibrationHigh]",
+				"itemconditions":[{"type":"Coat","zone":"house"},{"type":"VibeRemocon","zone":"house"}]
+			},
+			"condition":
+			{
+				"description":"等电梯门缓缓关闭，冒险马上开始，别眨眼！",
+				"condition":"[Action_HandcuffsAtMap,Naked,SubCondition_cosplay,SubCondition_VibrationHigh]",
+				"duration":12.0,
+				"itemconditions":[{"type":"Coat","zone":"house"},{"type":"VibeRemocon","zone":"house"}]
+			}
+		},
+		{
+			"zone":"F",
+			"travelcondition":
+			{
+				"description":"想办法逃出这电梯的魔掌吧，考验正式开始！",
+				"condition":"[Naked,SubCondition_cosplay,SubCondition_VibrationHigh]",
+				"itemconditions":[{"type":"Coat","zone":"house"},{"type":"VibeRemocon","zone":"house"}]
+			},
+			"condition":
+			{
+				"description":"想办法逃出这电梯的魔掌吧，考验正式开始！",
+				"condition":"[Action_None,Naked,SubCondition_cosplay,SubCondition_VibrationHigh]",
+				"itemconditions":[{"type":"Coat","zone":"house"},{"type":"VibeRemocon","zone":"house"}],
+				"oncomplete":[
+					{"type":"dropItem", "itemtype":"HandcuffKey", "stage":"Mansion", "x":24.25, "y":-0.09, "z":152.71},
+					{"type":"equipAdultToy", "parts":["Vibrator","TitRotor","KuriRotor"]},
+					{"type":"lockHandcuffs", "handcuffstype":"KeyHandcuff", "attachtoobject":false, "duration":0 },
+					{"type":"setVibrator", "level":"High"}]
+			}
+		},
+		{
+			"zone":"house",
+			"travelcondition":
+			{
+				"description":"快回去拿上你的外套，别让人抓个正着！",
+				"condition":"[Naked,SubCondition_cosplay,SubCondition_VibrationHigh]",
+				"itemconditions":[{"type":"Coat","zone":"house"},{"type":"VibeRemocon","zone":"house"}]
+			},
+			"condition":
+			{
+				"rp":1000,
+				"description":"拿上你的外套，快回家暖暖身子吧～",
+				"duration":3.0,
+				"condition":"[!Naked]"
+			}
+		}
+	]
+}

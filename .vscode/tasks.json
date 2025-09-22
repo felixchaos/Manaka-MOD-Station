@@ -1,0 +1,111 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Install Python dependencies (pip)",
+			"type": "shell",
+			"command": "python -m pip install -r requirements.txt",
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Build EXE (PyInstaller)",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File tools/build_exe.ps1 -Version 1.0.0",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build EXE (PyInstaller)",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File tools/build_exe.ps1 -Version 1.0.0",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MSI (WiX)",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File update/installer/build_installer.ps1 -Version 1.0.0 -DistDir bin/dist/PracticeApp",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MSI (WiX)",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File update/installer/build_installer.ps1 -Version 1.0.0 -DistDir bin/dist/PracticeApp",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MSI (WiX)",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File update/installer/build_installer.ps1 -Version 1.0.0 -DistDir bin/dist/PracticeApp",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build EXE (PyInstaller)",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File tools/build_exe.ps1 -Version 1.0.0",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MSI (WiX v6)",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File update/installer/build_installer_v6.ps1 -Version 1.0.0 -DistDir bin/dist/PracticeApp",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MSI (WiX v6)",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File update/installer/build_installer_v6.ps1 -Version 1.0.0 -DistDir bin/dist/PracticeApp",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Build MSI (WiX v6)",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File update/installer/build_installer_v6.ps1 -Version 1.0.0 -DistDir bin/dist/PracticeApp",
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Install Python dependencies (pip)",
+			"type": "shell",
+			"command": "python -m pip install -r requirements.txt",
+			"group": "build"
+		},
+		{
+			"label": "Build MSI (WiX v6) - rebuild after dir tree fix",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File update/installer/build_installer_v6.ps1 -Version 1.0.2 -DistDir bin/dist/PracticeApp",
+			"group": "build"
+		},
+		{
+			"label": "Build MSI (WiX v6) - v1.0.2",
+			"type": "shell",
+			"command": "powershell -ExecutionPolicy Bypass -File update/installer/build_installer_v6.ps1 -Version 1.0.2 -DistDir bin/dist/PracticeApp",
+			"group": "build"
+		}
+	]
+}

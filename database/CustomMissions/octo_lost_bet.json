@@ -1,0 +1,513 @@
+{
+	"title":"Little Gift",
+	"listmission":true,
+    "addtitleinlist":true,
+    "addtitleinpanel":true,
+	"zones":[
+
+			{
+			"id":"home",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Apart", "x":0, "y":0, "z":0, "r":20,
+				"outlinehidden":true, "compasshidden":true}]
+			},
+
+			{
+			"id":"frontyard",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":-28.90, "y":-0.08, "z":-119.39, "r":0.5,
+				"outlinehidden":false, "compasshidden":false}]
+			},
+
+			{
+			"id":"frontyard_gate",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":-29.24, "y":-0.08, "z":-117.40, "r":0.5,
+				"outlinehidden":false, "compasshidden":false}]
+			},
+
+			{
+			"id":"vending1_front",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":-10.21, "y":-0.08, "z":-127.49, "r":0.5,
+				"outlinehidden":false, "compasshidden":false}]
+			},
+
+			{
+			"id":"vending1",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":-9.00, "y":-0.08, "z":-127.50, "r":1,
+				"outlinehidden":false, "compasshidden":false}]
+			},
+
+			{
+			"id":"vending2_front",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":-22.61, "y":-0.10, "z":-101.76, "r":0.5,
+				"outlinehidden":false, "compasshidden":false}]
+			},
+
+			{
+			"id":"vending3_front",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":-35.49, "y":-0.10, "z":-76.13, "r":0.5,
+				"outlinehidden":false, "compasshidden":false}]
+			},
+
+			{
+			"id":"vending4_front",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":5.24, "y":-0.11, "z":-79.01, "r":0.5,
+				"outlinehidden":false, "compasshidden":false}]
+			},
+
+			{
+			"id":"vending4",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":5.25, "y":-0.11, "z":-78.04, "r":0.5,
+				"outlinehidden":false, "compasshidden":false}]
+			},
+
+			{
+			"id":"vending4_large",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":5.25, "y":-0.11, "z":-78.04, "r":2,
+				"outlinehidden":false, "compasshidden":false}]
+			},
+
+			{
+			"id":"safezone",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":0.65, "y":-0.11, "z":-76.01, "r":0.5,
+				"outlinehidden":false, "compasshidden":false}]
+			},
+
+			{
+			"id":"funzone",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":0.10, "y":-0.10, "z":-73.99, "r":0.5,
+				"outlinehidden":false, "compasshidden":false}]
+			}
+		],
+
+
+
+
+
+	"subconditions":[
+		{
+			"id":"nakey",
+			"condition":"Naked,isDayTime"
+		}
+	],
+
+
+
+
+
+	"checkpoints":
+	[
+		{
+			"zone":"frontyard",
+			"condition":
+			{
+				"rp":10,
+				"duration":7,
+				"description":"【愿赌服输】 触发任务需要将大衣留在家里，白天，开启诱惑技能，刚需通用（上半身）分类里的项圈",
+				"condition":"[SubCondition_nakey]",
+				"itemconditions":[{"type":"Coat","zone":"home"}],
+				"oncomplete":[
+				{"type":"unequipAllCosplay"}
+				]
+			}
+		},
+
+		{
+			"zone":"frontyard",
+			"condition":
+			{
+				"rp":10,
+				"duration":8,
+				"description":"你跟好朋友打了个赌，尽管你不觉得自己会输，但今天幸运女神并不青睐你",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"frontyard",
+			"condition":
+			{
+				"duration":15,
+				"description":"你有两个选择，要么给朋友当一回性奴，要么全裸出门给她带罐饮料，你觉得还是后者轻松些，毕竟自动售货机离你家很近，肯定没什么问题",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"frontyard",
+			"condition":
+			{
+				"duration":8,
+				"description":"她盯着你的身子看了好一会儿，你能感觉到她的脸上写满了坏主意",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"frontyard",
+			"condition":
+			{
+				"duration":15,
+				"description":"她打开大门，让你裸露的肌肤被夏日炎热的空气包裹，并给了你够买饮料的现金。随着大门关闭反锁的声音，你现在开始有点紧张了",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"vending1_front",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"没办法，谁让你要逞强打赌呢，鼓起勇气，出门右前方就有台售货机，很快就能搞定",
+				"faildescription":"You gotta stay naked for this, sorry.",
+				"condition":"[SubCondition_nakey]"
+			},
+			"condition":
+			{
+				"rp":10,
+				"duration":7,
+				"description":"嗯...朋友要求的饮料已经卖光了，你可以买罐别的，没区别，对吧？",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"vending1",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"没有可口，就拿罐百事吧",
+				"faildescription":"You gotta stay naked for this, sorry.",
+				"condition":"[SubCondition_nakey]"
+			},
+			"condition":
+			{
+				"rp":10,
+				"description":"用朋友给你的钱买一罐",
+				"condition":"[SubCondition_nakey,Action_UseBuyMachine]"
+			}
+		},
+
+		{
+			"zone":"frontyard_gate",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"没什么难度，对吧？现在可以回家啦",
+				"faildescription":"You gotta stay naked for this, sorry.",
+				"condition":"[SubCondition_nakey]"
+			},
+			"condition":
+			{
+				"rp":10,
+				"duration":7,
+				"description":"你敲了敲门，把饮料递了过去",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"vending2_front",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"你没买到她指定的饮料，她不打算放你进去，\"买不到饮料，回来就挨操\"你决定还是去另一台售货机看看，就在出门左手边",
+				"faildescription":"You gotta stay naked for this, sorry.",
+				"condition":"[SubCondition_nakey]"
+			},
+			"condition":
+			{
+				"rp":10,
+				"duration":7,
+				"description":"真不走运，这台也没有，行人越来越多了，不太妙啊",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"vending3_front",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"好在你知道还有一台藏得比较深的售货机，那总该有了吧，没记错的话，往公寓走的路口前有条小道，穿过去就能找到它",
+				"faildescription":"You gotta stay naked for this, sorry.",
+				"condition":"[SubCondition_nakey]"
+			},
+			"condition":
+			{
+				"rp":10,
+				"duration":7,
+				"description":"猜猜怎么着，这居然也没有，你快没招了",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"vending4_front",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"虽然确实还有台售货机, 但它的位置可有点危险，往东边直走就在丁字路口上，谁都看得见的位置",
+				"faildescription":"You gotta stay naked for this, sorry.",
+				"condition":"[SubCondition_nakey]"
+			},
+			"condition":
+			{
+				"rp":10,
+				"duration":7,
+				"description":"终于，这台还有存货！可是...你身上还有现金吗？",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"vending4_large",
+			"condition":
+			{
+				"rp":10,
+				"duration":10,
+				"description":"你当然没有了！在第一台售货机你就用掉了，你怎么忘了这回事呢！",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"vending4_large",
+			"condition":
+			{
+				"rp":10,
+				"duration":15,
+				"description":"或许你足够幸运能捡到别人落下的硬币，虽然要是被人看到了绝对会被当成变态，但你现在只能趴在地上找找看了",
+				"condition":"[SubCondition_nakey,Crouching]"
+			}
+		},
+
+		{
+			"zone":"vending4_large",
+			"condition":
+			{
+				"rp":10,
+				"duration":7,
+				"description":"你能感受到微风吹过你翘起的屁股和小穴，羞耻却又有点愉悦，可惜你还是倒霉运，什么也没找到",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"safezone",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"你不太想就这样回去，谁知道你的好朋友打算怎么玩弄你。在售货机西边那栋房子的围墙后面躲躲，想想接下来怎么办",
+				"faildescription":"You gotta stay naked for this, sorry.",
+				"condition":"[SubCondition_nakey]"
+			},
+			"condition":
+			{
+				"rp":10,
+				"duration":7,
+				"description":"这虽然没人会发现，但一直躲着解决不了问题",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"safezone",
+			"condition":
+			{
+				"rp":10,
+				"duration":7,
+				"description":"看来只有一个办法了：求助路人，希望能要到买饮料的钱",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"safezone",
+			"condition":
+			{
+				"rp":10,
+				"duration":7,
+				"description":"总会有人愿意帮助你这没有衣服穿，回不了家，楚楚可怜的少女吧？出去找到对你感兴趣的人，诱惑他来到这来",
+				"condition":"[SubCondition_nakey,Watched,ShowingOff]"
+			}
+		},
+
+		{
+			"zone":"safezone",
+			"condition":
+			{
+				"rp":10,
+				"duration":20,
+				"description":"你解释了情况，他的眼睛直勾勾地审视着你的每一寸肉体，也不知道他听进去了没有",
+				"condition":"[SubCondition_nakey,Watched,ShowingOff]"
+			}
+		},
+
+		{
+			"zone":"safezone",
+			"condition":
+			{
+				"rp":10,
+				"duration":15,
+				"description":"\"现在的年轻人不知道什么是礼貌了吗？求人就该有求人的样子\"看样子他也不是什么善茬，没办法，你只好向他土下座",
+				"condition":"[SubCondition_nakey,Watched,ShowingOff,Action_Dogeza]"
+			}
+		},
+
+		{
+			"zone":"safezone",
+			"condition":
+			{
+				"rp":10,
+				"duration":10,
+				"description":"\"哈哈，这才像样，没问题，我可以帮你\" 他递给你一些现金",
+				"condition":"[SubCondition_nakey,Watched,ShowingOff]"
+			}
+		},
+
+		{
+			"zone":"vending4",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"谢天谢地，尽管羞红了脸，但起码拿到钱了，可以去售货机了！",
+				"faildescription":"You gotta stay naked for this, sorry.",
+				"condition":"[SubCondition_nakey]"
+			},
+			"condition":
+			{
+				"rp":10,
+				"description":"总算能买到这罐饮料了",
+				"condition":"[SubCondition_nakey,Watched,ShowingOff,Action_UseBuyMachine]"
+			}
+		},
+
+		{
+			"zone":"vending4_large",
+			"condition":
+			{
+				"rp":10,
+				"duration":10,
+				"description":"\"好事做到底，我来送你回家怎么样？\"",
+				"condition":"[SubCondition_nakey,Watched,ShowingOff]"
+			}
+		},
+
+		{
+			"zone":"safezone",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"\"但首先...\" 他指了指刚才的房子，意思让你再回去一趟，你生起一丝不详的预感",
+				"faildescription":"You gotta stay naked for this, sorry.",
+				"condition":"[SubCondition_nakey]"
+			},
+			"condition":
+			{
+				"rp":10,
+				"duration":7,
+				"description":"\"我想送你个小玩意儿\"",
+				"condition":"[SubCondition_nakey,Watched,ShowingOff]",
+				"oncomplete":[
+				{"type":"equipCosplay", "parts":["m_cosplay_general_upper_kubiwa"]}
+				]
+			}
+		},
+
+		{
+			"zone":"safezone",
+			"condition":
+			{
+				"rp":10,
+				"duration":7,
+				"description":"\"它和你很配，真可爱\"",
+				"condition":"[SubCondition_nakey]"
+
+			}
+		},
+
+		{
+			"zone":"funzone",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"\"现在转到另一边\" 他示意你站在旁边背过身去，你就知道他不是什么正人君子",
+				"faildescription":"缺少项圈，请确认购买过",
+				"condition":"[SubCondition_nakey,Cosplay_m_cosplay_general_upper_kubiwa]"
+			},
+			"condition":
+			{
+				"rp":10,
+				"description":"\"很好，现在自己把手铐带上\"他拿出一个钥匙手铐，将你的双手并在一起，并饶有兴致的等你自己按下锁扣",
+				"condition":"[SubCondition_nakey,KeyedHandcuffs]",
+				"oncomplete":[
+				{"type":"dropItem", "itemtype":"HandcuffKey", "stage":"Apart", "x":1.5, "y":0, "z":0.5}
+				]
+			}
+		},
+
+		{
+			"zone":"funzone",
+			"condition":
+			{
+				"rp":20,
+				"duration":7,
+				"description":"\"没事的，我只是和你朋友一样，玩个游戏而已\" 他说着又给你戴上了眼罩，你不知道他为什么随身带着这些鬼东西，你也不知道你运气为什么这么好又正巧碰上他",
+				"condition":"[SubCondition_nakey]",
+				"oncomplete":[
+				{"type":"equipAdultToy", "parts":["EyeMask"]}
+				]
+			}
+		},
+
+		{
+			"zone":"frontyard_gate",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"他拍拍你的屁股示意你可以走了，你现在得以这样下流的样子走过住宅区，眼前漆黑一片，你害怕会跑快了会撞上东西，只能一步步小心行走",
+				"condition":"[SubCondition_nakey,!Dashing]"
+			},
+			"condition":
+			{
+				"rp":10,
+				"duration":15,
+				"description":"终于到家了，你的屁股再次感受到陌生人手掌有力的揉搓，然后听到他走远的声音，他根本没有打算在离开前带走他的东西。",
+				"condition":"[SubCondition_nakey]"
+			}
+		},
+
+		{
+			"zone":"frontyard_gate",
+			"condition":
+			{
+				"rp":10,
+				"duration":20,
+				"description":"你敲响了门铃，朋友坏笑着迎接你，看你打不开这对手铐，朋友说她有办法不过需要你付出代价，\"还记得另一个选项吗？\"你知道，今晚可能不太好过了..."
+			}
+		}
+	]
+}

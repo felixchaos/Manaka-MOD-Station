@@ -1,0 +1,32 @@
+{
+	"title":"d4",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+            "id":"Home_Outside",
+			"areas":[{"type":"sphere","stage":"Apart", "x":1.74, "y":0.00, "z":0.06, "r":50.0, "outlinehidden":true, "compasshidden":true}]
+		},
+		{
+			"id":"D7",
+			"areas":[{"type":"sphere","stage":"StationFront", "x":-261.98, "y":7.54, "z":-1.33, "r":4.0, "outlinehidden":true, "compasshidden":true}]
+		}
+        
+	],
+	"checkpoints":
+	[
+
+        {
+			"zone":"D7",
+					"condition": {
+						"rp": 110,
+						"duration": 30.0,
+						"hidepanel": "IfNotCondition",
+						"description": "在裸体状态下将自己铐在行人天桥的中央位置.",
+						"condition": "[Naked,Action_HandcuffsAtMap]",
+						"reset": false
+					}
+		}
+	]
+}

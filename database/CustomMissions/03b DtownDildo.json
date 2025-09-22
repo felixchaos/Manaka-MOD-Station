@@ -1,0 +1,32 @@
+{
+	"title":"d2",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+            "id":"Home_Outside",
+			"areas":[{"type":"sphere","stage":"Apart", "x":1.74, "y":0.00, "z":0.06, "r":50.0, "outlinehidden":true, "compasshidden":true}]
+		},
+		{
+			"id":"D3",
+			"areas":[{"type":"sphere","stage":"StationFront", "x":-288.22, "y":0.26, "z":17.17, "r":8.5, "outlinehidden":true, "compasshidden":true}]
+		}
+        
+	],
+	"checkpoints":
+	[
+
+        {
+			"zone":"D3",
+					"condition": {
+						"rp": 110,
+						"duration": 25.0,
+						"hidepanel": "IfNotCondition",
+						"description": "在裸体状态下于购物中心与东京站前的地面上使用按摩棒.",
+						"condition": "[Naked,(Action_UseDildoFloorPussy1,Action_UseDildoFloorAnal1)]",
+						"reset": true
+					}
+		}
+	]
+}

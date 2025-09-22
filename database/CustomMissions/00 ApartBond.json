@@ -1,0 +1,34 @@
+{
+	"title":"Showcase test mission 2",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+			"id":"everywhere1",
+			"areas":[
+				{"type":"sphere","stage":"Mansion", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true}
+			]
+		}
+	],
+	"subconditions":[
+		{
+			"id":"c",
+			"condition":"[Naked,HandcuffsBack,NPCArea]"
+		}
+	],
+	"checkpoints":
+	[
+		{
+			"zone":"everywhere1",
+			"condition": {
+				"rp": 80,
+				"duration": 75.0,
+				"hidepanel": "IfNotCondition",
+				"description": "在有人经过的地点裸体状态下，用背铐方式自行戴上手铐.",
+				"condition": "SubCondition_c",
+				"reset": false
+			}			
+		}
+	]
+}

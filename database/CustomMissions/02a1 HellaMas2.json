@@ -1,0 +1,32 @@
+{
+	"title":"01con",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+			"id":"mall2",
+			"areas":[
+			{"type":"sphere","stage":"ShoppingMall", "x":11.84, "y":-8.54, "z":5.52, "r":3.0, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"ShoppingMall", "x":56.25, "y":-8.55, "z":-27.90, "r":2.4, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"ShoppingMall", "x":58.59, "y":-8.53, "z":-34.14, "r":2.5, "outlinehidden":true, "compasshidden":true}
+			]
+		}
+        
+	],
+	"checkpoints":
+	[
+
+        {
+			"zone":"mall2",
+					"condition": {
+						"rp": 140,
+						"duration": 45.0,
+						"hidepanel": "IfNotCondition",
+						"description": "在裸体状态下于自动扶梯下方进行自慰或使用按摩棒.",
+						"condition": "[Naked,(Action_MituasiOnani,Action_OnaniNormal,Action_OnaniNeGanimata,Action_OnaniSikoru,Action_OnaniYotuashi,Action_OnaniArmKuri,Action_UseDildoFloorPussy1,Action_UseDildoFloorAnal1,Action_UseDildoWallPussy1,Action_UseDildoWallAnal1,Action_UseDildoWallFella1,Action_SitDildo)]",
+						"reset": false
+					}
+		}
+	]
+}

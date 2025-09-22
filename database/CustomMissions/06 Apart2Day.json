@@ -1,0 +1,38 @@
+{
+	"title":"01con",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+            "id":"Home_Outside",
+			"areas":[{"type":"sphere","stage":"Apart", "x":1.74, "y":0.00, "z":0.06, "r":50.0, "outlinehidden":true, "compasshidden":true}]
+		},
+		{
+			"id":"Mansion00",
+			"areas":[{"type":"sphere","stage":"Mansion", "x":43.71, "y":22.69, "z":128.33, "r":2.5, "outlinehidden":true, "compasshidden":true}]
+		}
+        
+	],
+	"checkpoints":
+	[
+
+        {
+			"zone":"Mansion00",
+					"condition": {
+						"rp": 200,
+						"duration": 10.0,
+						"hidepanel": "IfNotCondition",
+						"description": "将外套留在家中，于白天裸体前往公寓顶层并站在最内侧房间门前.",
+						"condition": "[Naked,IsDayTime]",
+						"itemconditions": [
+							{
+								"type": "Coat",
+								"zone": "Home_Outside"
+							}
+						],
+						"reset": true
+					}
+		}
+	]
+}

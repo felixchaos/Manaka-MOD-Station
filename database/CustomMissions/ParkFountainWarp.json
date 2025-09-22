@@ -1,0 +1,24 @@
+{
+	"title":"Park Fountain Warp",
+	"zones":[
+		{
+			"id":"Park_WarpEntrance2",
+			"areas":[{"type":"sphere","stage":"Park", "x":71.44, "y":50.02, "z":27.04, "r":0.5, "outlinehidden":false, "compasshidden":true}]
+		}
+	],
+	"checkpoints":
+	[
+		{
+			"zone":"Park_WarpEntrance2",
+			"condition":
+			{
+				"description":"传送至喷泉",
+				"duration":3,
+				"condition":"[Action_None]",
+				"oncomplete":[
+					{"type":"setPlayerPosition", "x":62.34, "y":51.01, "z":67.54, "rx":0.00000, "ry":0.36812, "rz":0.00000, "rw":0.92978 }
+				]
+			}
+		}
+	]
+}

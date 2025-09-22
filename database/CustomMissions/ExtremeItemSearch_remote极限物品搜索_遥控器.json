@@ -1,0 +1,5585 @@
+{
+	"title":"ExtemeSearchCoat",
+	"zones":[
+		{
+			"id":"start",
+			"areas":[{"type":"sphere", "stage":"Apart", "x":-2.69, "y":0, "z":-2.65, "r":1, "outlinehidden":true, "compasshidden":true}]
+		},
+		{
+			"id": "outside",
+			"areas": [
+				{"type":"sphere", "stage":"StationFront", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true},
+				{"type":"sphere", "stage":"Residence", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true},
+				{"type":"sphere", "stage":"ShoppingMall", "x":0, "y":0, "z":0, "r":500, "outlinehidden":true, "compasshidden":true},
+				{"type":"sphere", "stage":"Park", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true},
+				{"type":"sphere", "stage":"Mansion", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true},
+				{"type":"sphere", "stage":"FashionShop", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true},
+				{"type":"sphere", "stage":"Convenience", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true}
+			]
+		},
+		{
+			"id": "everywhere",
+			"areas": [
+				{"type":"sphere", "stage":"Apart", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true},
+				{"type":"sphere", "stage":"StationFront", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true},
+				{"type":"sphere", "stage":"Residence", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true},
+				{"type":"sphere", "stage":"ShoppingMall", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true},
+				{"type":"sphere", "stage":"Park", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true},
+				{"type":"sphere", "stage":"Mansion", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true},
+				{"type":"sphere", "stage":"FashionShop", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true},
+				{"type":"sphere", "stage":"Convenience", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true}
+			]
+		}
+	],
+	"subconditions":[
+		{
+			"id":"BasicConditions",
+			"condition":"!(Skill_DisableHideCostume, Skill_TimeStop, Skill_Exhibitionism, Skill_Sex)"
+		},
+		{
+			"id":"AnyBoobCovers",
+			"condition":"(Cosplay_m_cosplay_school_gal_shirt_summer, Cosplay_m_cosplay_school_gal_cardigan_winter, Cosplay_m_cosplay_school_gal_shirt_winter, Cosplay_m_cosplay_school_hoodie_shirt, Cosplay_m_cosplay_school_hoodie_hoodie, Cosplay_m_cosplay_glossy_knit, Cosplay_m_cosplay_sweater_tops, Cosplay_m_cosplay_suit_luxe_tops, Cosplay_m_cosplay_suit_chic_shirt, Cosplay_m_cosplay_maid_onepiece)"
+		},
+		{
+			"id":"AnyButtCovers",
+			"condition":"(Cosplay_m_cosplay_suit_luxe_pants, Cosplay_m_cosplay_school_gal_cardigan_summer, Cosplay_m_cosplay_school_gal_skirt, Cosplay_m_cosplay_school_hoodie_skirt, Cosplay_m_cosplay_glossy_knit, Cosplay_m_cosplay_sweater_tops, Cosplay_m_cosplay_maid_onepiece)"
+		},
+		{
+			"id":"AnyVaginaCovers",
+			"condition":"(Cosplay_m_cosplay_school_gal_skirt, Cosplay_m_cosplay_school_hoodie_skirt, Cosplay_m_cosplay_glossy_knit, Cosplay_m_cosplay_sweater_tops, Cosplay_m_cosplay_suit_luxe_pants, Cosplay_m_cosplay_suit_chic_pants, Cosplay_m_cosplay_suit_chic_skirt, Cosplay_m_cosplay_maid_onepiece)"
+		},
+		{
+			"id":"AnyPenisCovers",
+			"condition":"(Cosplay_m_cosplay_glossy_knit, Cosplay_m_cosplay_suit_luxe_pants, Cosplay_m_cosplay_suit_chic_pants, Cosplay_m_cosplay_suit_chic_skirt)"
+		}
+	],
+	"checkpoints":
+	[
+		{
+			"id":"D1",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Pick up the handcuff key while flashing.",
+				"condition":"Action_None",
+				"onviolatecondition":[
+					{"type":"setAction", "action":"None"},
+					{"type":"setCheckpoint", "selectortype":"SpecificId", "id":"D2"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"ENDSCRIPT"}
+		},
+
+		{
+			"id":"D2",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Pick up the handcuff key while flashing and with vibrators in.",
+				"condition":"Action_None",
+				"onviolatecondition":[
+					{"type":"setAction", "action":"None"},
+					{"type":"setCheckpoint", "selectortype":"SpecificId", "id":"D3"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"D2Setup"}
+		},
+		{
+			"id":"D3",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Pick up the coat.",
+				"condition":"Action_None",
+				"onviolatecondition":[
+					{"type":"setAction", "action":"None"},
+					{"type":"setCheckpoint", "selectortype":"SpecificId", "id":"D4"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"ENDSCRIPT"}
+		},
+		{
+			"id":"D4",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Pick up the handcuff key and coat.",
+				"condition":"Action_None",
+				"onviolatecondition":[
+					{"type":"setAction", "action":"None"},
+					{"type":"setCheckpoint", "selectortype":"SpecificId", "id":"D5"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"ENDSCRIPT"}
+		},
+		{
+			"id":"D5",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Pick up the handcuff key and coat with vibrators in.",
+				"condition":"Action_None",
+				"onviolatecondition":[
+					{"type":"setAction", "action":"None"},
+					{"type":"setCheckpoint", "selectortype":"SpecificId", "id":"D6"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"D5Setup"}
+		},
+
+		{
+			"id":"D6",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Find the handcuff key while flashing.",
+				"condition":"Action_None",
+				"onviolatecondition":[
+					{"type":"setAction", "action":"None"},
+					{"type":"setCheckpoint", "selectortype":"SpecificId", "id":"D7"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"ENDSCRIPT"}
+		},
+
+		{
+			"id":"D7",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Find the handcuff key while flashing and with vibrators in.",
+				"condition":"Action_None",
+				"onviolatecondition":[
+					{"type":"setAction", "action":"None"},
+					{"type":"setCheckpoint", "selectortype":"SpecificId", "id":"D8"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"D7Setup"}
+		},
+		{
+			"id":"D8",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Find the coat.",
+				"condition":"Action_None",
+				"onviolatecondition":[
+					{"type":"setAction", "action":"None"},
+					{"type":"setCheckpoint", "selectortype":"SpecificId", "id":"D9"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"ENDSCRIPT"}
+		},
+		{
+			"id":"D9",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Find the handcuff key and coat.",
+				"condition":"Action_None",
+				"onviolatecondition":[
+					{"type":"setAction", "action":"None"},
+					{"type":"setCheckpoint", "selectortype":"SpecificId", "id":"D10"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"ENDSCRIPT"}
+		},
+		{
+			"id":"D10",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Find the handcuff key and coat with vibrators in.",
+				"condition":"Action_None",
+				"onviolatecondition":[
+					{"type":"setAction", "action":"None"},
+					{"type":"setCheckpoint", "selectortype":"SpecificId", "id":"D1"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"D10Setup"}
+		},
+
+
+
+
+
+
+
+
+		{
+			"id":"D2Setup",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Put on any vibrator and flash any part of your body to start the mission",
+				"condition":"[SubCondition_BasicConditions, (AdultToy_Vibrator, AdultToy_TitRotor, AdultToy_KuriRotor), ([(Naked, FrontOpen1, FrontOpen2), !SubCondition_AnyBoobCovers], [(Naked, BackOpen), !SubCondition_AnyButtCovers], [(Naked, FrontOpen1, FrontOpen2), !SubCondition_AnyVaginaCovers], [(Naked, FrontOpen1, FrontOpen2), !SubCondition_AnyPenisCovers, Futanari])]",
+				"oncomplete":[
+					{"type":"setVibrator", "level":"Random"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+		{
+			"id":"D5Setup",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Remove casual clothes and put on any vibrator to start the mission.",
+				"condition":"[SubCondition_BasicConditions, (AdultToy_Vibrator, AdultToy_TitRotor, AdultToy_KuriRotor), !(SubCondition_AnyBoobCovers, SubCondition_AnyButtCovers, SubCondition_AnyVaginaCovers, SubCondition_AnyPenisCovers)]",
+				"oncomplete":[
+					{"type":"setVibrator", "level":"Random"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"RandomiseItemLocationCompass"}
+		},
+
+		{
+			"id":"D7Setup",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Put on any vibrator and flash any part of your body to start the mission",
+				"condition":"[SubCondition_BasicConditions, (AdultToy_Vibrator, AdultToy_TitRotor, AdultToy_KuriRotor), ([(Naked, FrontOpen1, FrontOpen2), !SubCondition_AnyBoobCovers], [(Naked, BackOpen), !SubCondition_AnyButtCovers], [(Naked, FrontOpen1, FrontOpen2), !SubCondition_AnyVaginaCovers], [(Naked, FrontOpen1, FrontOpen2), !SubCondition_AnyPenisCovers, Futanari])]",
+				"oncomplete":[
+					{"type":"setVibrator", "level":"Random"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+		{
+			"id":"D10Setup",
+			"zone":"start",
+			"condition":
+			{
+				"duration":7,
+				"hideprogress":true,
+				"hidepanel":true,
+				"description":"Remove casual clothes and put on any vibrator to start the mission.",
+				"condition":"[SubCondition_BasicConditions, (AdultToy_Vibrator, AdultToy_TitRotor, AdultToy_KuriRotor), !(SubCondition_AnyBoobCovers, SubCondition_AnyButtCovers, SubCondition_AnyVaginaCovers, SubCondition_AnyPenisCovers)]",
+				"oncomplete":[
+					{"type":"setVibrator", "level":"Random"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"RandomiseItemLocation"}
+		},
+
+
+
+
+
+
+
+
+
+
+		{
+			"id":"RandomiseItemLocation",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete":[
+					{"type":"collectItem", "itemtype":"VibeRemocon"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"RandomId", "ids":["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","148","149","150","151","152","153","154","155","156","157","158","159","160","161","162","163","164","165","166","167","168","169","170","171","172","173","174","175","176","177","178","179","180","181","182","183","184","185","186","187","188","189","190","191","192","193","194","195","196","197","198","199","200","201","202","203","204","205","206","207","208","209","210","211","212","213","214","215","216"]}
+		},
+		{
+			"id":"RandomiseItemLocationCompass",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete":[
+					{"type":"collectItem", "itemtype":"VibeRemocon"}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"RandomId", "ids":["c1","c2","c3","c4","c5","c6","c7","c8","c9","c10","c11","c12","c13","c14","c15","c16","c17","c18","c19","c20","c21","c22","c23","c24","c25","c26","c27","c28","c29","c30","c31","c32","c33","c34","c35","c36","c37","c38","c39","c40","c41","c42","c43","c44","c45","c46","c47","c48","c49","c50","c51","c52","c53","c54","c55","c56","c57","c58","c59","c60","c61","c62","c63","c64","c65","c66","c67","c68","c69","c70","c71","c72","c73","c74","c75","c76","c77","c78","c79","c80","c81","c82","c83","c84","c85","c86","c87","c88","c89","c90","c91","c92","c93","c94","c95","c96","c97","c98","c99","c100","c101","c102","c103","c104","c105","c106","c107","c108","c109","c110","c111","c112","c113","c114","c115","c116","c117","c118","c119","c120","c121","c122","c123","c124","c125","c126","c127","c128","c129","c130","c131","c132","c133","c134","c135","c136","c137","c138","c139","c140","c141","c142","c143","c144","c145","c146","c147","c148","c149","c150","c151","c152","c153","c154","c155","c156","c157","c158","c159","c160","c161","c162","c163","c164","c165","c166","c167","c168","c169","c170","c171","c172","c173","c174","c175","c176","c177","c178","c179","c180","c181","c182","c183","c184","c185","c186","c187","c188","c189","c190","c191","c192","c193","c194","c195","c196","c197","c198","c199","c200","c201","c202","c203","c204","c205","c206","c207","c208","c209","c210","c211","c212","c213","c214","c215","c216"]}
+		},
+
+
+
+
+
+
+
+
+
+		{
+			"id":"1",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-17.38, "y":-0.1, "z":-122.37, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"2",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-8.37, "y":-0.1, "z":-128.39, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"3",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-15.86, "y":-0.11, "z":-116.12, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"4",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-4, "y":-0.11, "z":-109.32, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"5",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-9.52, "y":-0.1, "z":-99.94, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"6",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-23.69, "y":-0.1, "z":-100.21, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"7",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-27.9, "y":-0.1, "z":-110.67, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"8",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-24.98, "y":-0.1, "z":-109.27, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"9",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-39.32, "y":-0.1, "z":-104.92, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"10",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-39.01, "y":-0.09, "z":-88.17, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"11",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-46.25, "y":-0.09, "z":-77.87, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"12",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-34.38, "y":-0.09, "z":-77.77, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"13",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-37.09, "y":-0.09, "z":-69.09, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"14",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-32.88, "y":-0.09, "z":-71.98, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"15",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-15.66, "y":-0.09, "z":-74.65, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"16",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-9.7, "y":-0.09, "z":-72.66, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"17",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-8.13, "y":-0.08, "z":-71.81, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"18",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-15.13, "y":-0.08, "z":-87.45, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"19",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":5.35, "y":-0.08, "z":-103.96, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"20",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":10.44, "y":-0.08, "z":-90.92, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"21",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":7.18, "y":-0.08, "z":-122, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"22",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":10.49, "y":-0.08, "z":-117.26, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"23",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":19.75, "y":-0.1, "z":-120.04, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"24",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":28.51, "y":-0.1, "z":-124.12, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"25",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":33.01, "y":-0.22, "z":-121.4, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"26",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":42.41, "y":-0.08, "z":-119.38, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"27",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":37.89, "y":-0.08, "z":-106.85, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"28",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":37.9, "y":-0.08, "z":-92.01, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"29",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":33.17, "y":-0.21, "z":-78.87, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"30",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":37.98, "y":-0.08, "z":-80.59, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"31",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":28.59, "y":-0.11, "z":-90.65, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"32",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":36.62, "y":-0.11, "z":-73.27, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"33",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":27.51, "y":-0.11, "z":-76.63, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"34",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":11.07, "y":-0.1, "z":-77.16, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"35",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":4.24, "y":-0.09, "z":-77.23, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"36",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-1.53, "y":-0.09, "z":-80.32, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"37",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-46.9, "y":-0.01, "z":-96.99, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"38",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":-2.09, "y":0.12, "z":-6.54, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"39",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":-3.08, "y":0.12, "z":-14.26, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"40",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":1.04, "y":0.12, "z":-11.18, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"41",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":3.07, "y":0.12, "z":-13.98, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"42",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":-0.96, "y":0.12, "z":-11.8, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"43",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":-3.21, "y":0.12, "z":-8.41, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"44",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":3.43, "y":0.12, "z":-5.81, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"45",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":33.85, "y":-0.08, "z":156.46, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"46",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":32.1, "y":-0.01, "z":150.42, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"47",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":35.01, "y":0, "z":145.31, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"48",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.77, "y":0.02, "z":145.13, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"49",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":0.02, "z":154.88, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"50",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":0.04, "z":147.78, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"51",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":0.02, "z":135.23, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"52",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":0.02, "z":127.37, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"53",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":2.53, "z":147.78, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"54",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":2.53, "z":135.23, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"55",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":2.53, "z":127.37, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"56",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":5.06, "z":154.88, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"57",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":5.06, "z":147.78, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"58",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":5.06, "z":127.37, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"59",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":7.57, "z":154.88, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"60",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":7.57, "z":135.23, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"61",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":7.57, "z":127.37, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"62",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":10.1, "z":147.78, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"63",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":10.1, "z":135.23, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"64",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":10.1, "z":127.37, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"65",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":12.62, "z":154.88, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"66",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":12.62, "z":135.23, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"67",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":12.62, "z":127.37, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"68",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":15.14, "z":154.88, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"69",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":15.14, "z":127.37, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"70",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":17.65, "z":154.88, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"71",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":17.65, "z":147.78, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"72",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":17.65, "z":127.37, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"73",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":20.18, "z":147.78, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"74",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":20.18, "z":135.23, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"75",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":20.18, "z":127.37, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"76",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":22.7, "z":154.88, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"77",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":22.7, "z":147.78, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"78",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":22.7, "z":135.23, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"79",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-232.09, "y":0.25, "z":-60.55, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"80",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-231.54, "y":0.26, "z":-56.36, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"81",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-221.02, "y":0.28, "z":-45.88, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"82",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-217.22, "y":0.28, "z":-43.5, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"83",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-223.17, "y":0.26, "z":-30.46, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"84",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-232.92, "y":0.22, "z":-38.25, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"85",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-236.41, "y":0.24, "z":-29.05, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"86",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-233.04, "y":0.28, "z":-25.05, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"87",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-221.94, "y":0.32, "z":-23.82, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"88",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-221.19, "y":0.45, "z":-18.69, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"89",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-214.18, "y":0.45, "z":-22.11, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"90",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-216.64, "y":0.45, "z":-20.27, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"91",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-222.51, "y":0.31, "z":-12.25, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"92",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-221.55, "y":0.25, "z":-10.74, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"93",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-232.66, "y":0.27, "z":-9.75, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"94",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-242.26, "y":0.27, "z":-6.2, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"95",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-240.59, "y":0.22, "z":-11.08, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"96",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-248.44, "y":0.24, "z":-11.27, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"97",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-252.26, "y":0.32, "z":-11.85, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"98",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-252.8, "y":0.27, "z":-7.54, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"99",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-278.39, "y":0.29, "z":-10.06, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"100",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-295.66, "y":0.29, "z":-9.65, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"101",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-261.85, "y":7.54, "z":-1.31, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"102",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-254.67, "y":4.03, "z":4.89, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"103",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-254.21, "y":4.01, "z":-7.45, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"104",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-252.78, "y":0.27, "z":4.86, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"105",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-247.52, "y":0.27, "z":15.75, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"106",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-232.53, "y":0.27, "z":10.21, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"107",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-224.21, "y":0.25, "z":9.5, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"108",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-276.27, "y":0.29, "z":4.09, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"109",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-275.35, "y":0.16, "z":12.38, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"110",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-274.62, "y":0.2, "z":23.74, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"111",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-262.15, "y":0.2, "z":25.84, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"112",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-258.96, "y":0.25, "z":14.07, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"113",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-283.73, "y":0.25, "z":18.31, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"114",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-291.21, "y":0.27, "z":27.05, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"115",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-295.45, "y":0.34, "z":21.01, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"116",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-278.23, "y":0.29, "z":-21.06, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"117",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-278.29, "y":0.29, "z":-26.95, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"118",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-286.07, "y":0.29, "z":-29.28, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"119",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-285.35, "y":0.29, "z":-22.59, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"120",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-284.56, "y":0.19, "z":-38.97, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"121",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-277.72, "y":0.29, "z":-40.02, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"122",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-268.1, "y":0.19, "z":-34.43, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"123",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-256.16, "y":0.28, "z":-33.17, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"124",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-254.61, "y":0.29, "z":-41.38, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"125",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-260.76, "y":0.2, "z":-44.48, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"126",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-254.25, "y":0.25, "z":-53.31, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"127",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-242.62, "y":0.26, "z":-42.23, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"128",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-238.64, "y":0.26, "z":-42.8, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"129",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-245.47, "y":0.26, "z":-51.69, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"130",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"FashionShop", "x":65.83, "y":0.07, "z":-152.95, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"131",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"FashionShop", "x":65.83, "y":0.07, "z":-135.6, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"132",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"FashionShop", "x":60.86, "y":0.07, "z":-138.77, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"133",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"FashionShop", "x":52.75, "y":0.07, "z":-141.2, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"134",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"FashionShop", "x":55.51, "y":0.07, "z":-147.65, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"135",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"FashionShop", "x":57.43, "y":0.07, "z":-142.68, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"136",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":21.2, "y":-8.53, "z":4.63, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"137",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":10.8, "y":-8.53, "z":0.65, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"138",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":8.76, "y":-8.53, "z":6.69, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"139",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":5.38, "y":-8.55, "z":17.66, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"140",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-0.03, "y":-8.1, "z":3.99, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"141",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":2.77, "y":-8.55, "z":-18.51, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"142",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-3.18, "y":-8.55, "z":-27.89, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"143",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":11.71, "y":-8.55, "z":-33.04, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"144",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":6.85, "y":-8.07, "z":-40.11, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"145",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":41.41, "y":-8.05, "z":-44.78, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"146",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":60.32, "y":-8.37, "z":-45.79, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"147",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":57.69, "y":-8.55, "z":-32.13, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"148",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":49.33, "y":-8.53, "z":-18.46, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"149",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":51.68, "y":-8.53, "z":-25.26, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"150",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":56.34, "y":-3.15, "z":-18.11, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"151",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":59.96, "y":-3.15, "z":-24.14, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"152",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":66, "y":-3.15, "z":-18.06, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"153",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":62.91, "y":-3.14, "z":-26.3, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"154",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":63, "y":-3.14, "z":-36.2, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"155",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":65.23, "y":-3.14, "z":-49.76, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"156",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":55.29, "y":-3.14, "z":-41.2, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"157",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":54.48, "y":-3.14, "z":-31.25, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"158",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":54.53, "y":-3.14, "z":-24.33, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"159",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":50.06, "y":-3.14, "z":-45.33, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"160",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":32.06, "y":-3.14, "z":-45.3, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"161",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":17.39, "y":-3.14, "z":-43.06, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"162",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-0.44, "y":-3.14, "z":-32.85, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"163",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-0.16, "y":-3.14, "z":-13.92, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"164",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-3.78, "y":-3.14, "z":-25.62, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"165",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-0.19, "y":-3.14, "z":4.11, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"166",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":13.17, "y":-3.14, "z":0.43, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"167",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":11.95, "y":-3.14, "z":16.8, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"168",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-4.89, "y":-3.14, "z":17.42, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"169",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":65.8, "y":2.26, "z":-18.2, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"170",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":56.3, "y":2.26, "z":-18.14, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"171",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":60.02, "y":2.26, "z":-23.8, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"172",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":54.48, "y":2.26, "z":-30.95, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"173",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":63.47, "y":2.26, "z":-47.58, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"174",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":19.03, "y":2.26, "z":-40.29, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"175",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":30.21, "y":2.26, "z":-41.37, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"176",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":40.42, "y":2.26, "z":-41.3, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"177",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":65.23, "y":50.01, "z":38.21, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"178",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":99.13, "y":49.01, "z":44.24, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"179",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":112.39, "y":49.01, "z":44.48, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"180",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":120.32, "y":49.01, "z":47.1, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"181",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":127.45, "y":49.01, "z":44.66, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"182",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":120.86, "y":49.01, "z":58.71, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"183",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":50.75, "y":50.05, "z":41.14, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"184",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":33.38, "y":50.07, "z":44.86, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"185",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":33.49, "y":50.07, "z":41.29, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"186",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":29.71, "y":50.07, "z":38.75, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"187",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":40.16, "y":50.07, "z":55.12, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"188",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":40.3, "y":50.03, "z":76.96, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"189",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":29.34, "y":50.03, "z":92.65, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"190",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":41.9, "y":50.05, "z":103.68, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"191",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":47.7, "y":50.03, "z":116.84, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"192",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":57.39, "y":50.05, "z":121.85, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"193",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":70.59, "y":50.47, "z":127.98, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"194",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":80.23, "y":50.01, "z":127.3, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"195",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":90.07, "y":50.01, "z":137.75, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"196",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":100.26, "y":50.01, "z":123.42, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"197",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":124.84, "y":49.06, "z":124.67, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"198",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":123.77, "y":49, "z":125.7, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"199",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":122.01, "y":49.06, "z":123.23, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"200",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":124.94, "y":49.06, "z":119.91, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"201",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":122.97, "y":49.06, "z":119.08, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"202",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":124, "y":49.1, "z":121.26, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"203",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":115.71, "y":49.02, "z":109.86, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"204",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":114.56, "y":49.05, "z":84.6, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"205",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":126.75, "y":52.03, "z":82.67, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"206",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":113.57, "y":52.98, "z":83.98, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"207",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":96.74, "y":52.02, "z":76.68, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"208",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":91.69, "y":51.02, "z":112.7, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"209",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":60.49, "y":51.01, "z":60.49, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"210",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":56.71, "y":51.01, "z":68.74, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"211",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":41.38, "y":50.05, "z":63.49, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"212",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":74.66, "y":50.96, "z":58.3, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"213",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":76.86, "y":52.06, "z":79.74, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"214",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":73.97, "y":52.5, "z":90.47, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"215",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":81.69, "y":52.06, "z":71.72, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+		{
+			"id":"216",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":82.45, "y":52.06, "z":87.17, "compasshidden":true}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOP"}
+		},
+
+
+
+
+
+
+
+
+
+
+
+
+
+		{
+			"id":"c1",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-17.38, "y":-0.1, "z":-122.37, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c2",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-8.37, "y":-0.1, "z":-128.39, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c3",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-15.86, "y":-0.11, "z":-116.12, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c4",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-4, "y":-0.11, "z":-109.32, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c5",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-9.52, "y":-0.1, "z":-99.94, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c6",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-23.69, "y":-0.1, "z":-100.21, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c7",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-27.9, "y":-0.1, "z":-110.67, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c8",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-24.98, "y":-0.1, "z":-109.27, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c9",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-39.32, "y":-0.1, "z":-104.92, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c10",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-39.01, "y":-0.09, "z":-88.17, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c11",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-46.25, "y":-0.09, "z":-77.87, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c12",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-34.38, "y":-0.09, "z":-77.77, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c13",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-37.09, "y":-0.09, "z":-69.09, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c14",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-32.88, "y":-0.09, "z":-71.98, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c15",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-15.66, "y":-0.09, "z":-74.65, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c16",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-9.7, "y":-0.09, "z":-72.66, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c17",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-8.13, "y":-0.08, "z":-71.81, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c18",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-15.13, "y":-0.08, "z":-87.45, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c19",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":5.35, "y":-0.08, "z":-103.96, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c20",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":10.44, "y":-0.08, "z":-90.92, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c21",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":7.18, "y":-0.08, "z":-122, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c22",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":10.49, "y":-0.08, "z":-117.26, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c23",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":19.75, "y":-0.1, "z":-120.04, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c24",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":28.51, "y":-0.1, "z":-124.12, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c25",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":33.01, "y":-0.22, "z":-121.4, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c26",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":42.41, "y":-0.08, "z":-119.38, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c27",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":37.89, "y":-0.08, "z":-106.85, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c28",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":37.9, "y":-0.08, "z":-92.01, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c29",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":33.17, "y":-0.21, "z":-78.87, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c30",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":37.98, "y":-0.08, "z":-80.59, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c31",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":28.59, "y":-0.11, "z":-90.65, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c32",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":36.62, "y":-0.11, "z":-73.27, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c33",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":27.51, "y":-0.11, "z":-76.63, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c34",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":11.07, "y":-0.1, "z":-77.16, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c35",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":4.24, "y":-0.09, "z":-77.23, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c36",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-1.53, "y":-0.09, "z":-80.32, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c37",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Residence", "x":-46.9, "y":-0.01, "z":-96.99, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c38",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":-2.09, "y":0.12, "z":-6.54, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c39",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":-3.08, "y":0.12, "z":-14.26, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c40",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":1.04, "y":0.12, "z":-11.18, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c41",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":3.07, "y":0.12, "z":-13.98, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c42",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":-0.96, "y":0.12, "z":-11.8, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c43",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":-3.21, "y":0.12, "z":-8.41, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c44",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Convenience", "x":3.43, "y":0.12, "z":-5.81, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c45",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":33.85, "y":-0.08, "z":156.46, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c46",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":32.1, "y":-0.01, "z":150.42, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c47",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":35.01, "y":0, "z":145.31, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c48",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.77, "y":0.02, "z":145.13, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c49",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":0.02, "z":154.88, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c50",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":0.04, "z":147.78, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c51",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":0.02, "z":135.23, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c52",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":0.02, "z":127.37, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c53",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":2.53, "z":147.78, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c54",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":2.53, "z":135.23, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c55",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":2.53, "z":127.37, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c56",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":5.06, "z":154.88, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c57",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":5.06, "z":147.78, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c58",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":5.06, "z":127.37, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c59",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":7.57, "z":154.88, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c60",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":7.57, "z":135.23, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c61",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":7.57, "z":127.37, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c62",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":10.1, "z":147.78, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c63",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":10.1, "z":135.23, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c64",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":10.1, "z":127.37, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c65",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":12.62, "z":154.88, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c66",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":12.62, "z":135.23, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c67",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":12.62, "z":127.37, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c68",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":15.14, "z":154.88, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c69",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":15.14, "z":127.37, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c70",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":17.65, "z":154.88, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c71",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":17.65, "z":147.78, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c72",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":17.65, "z":127.37, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c73",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":20.18, "z":147.78, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c74",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":20.18, "z":135.23, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c75",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.28, "y":20.18, "z":127.37, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c76",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":45.24, "y":22.7, "z":154.88, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c77",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":40.74, "y":22.7, "z":147.78, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c78",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Mansion", "x":42.87, "y":22.7, "z":135.23, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c79",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-232.09, "y":0.25, "z":-60.55, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c80",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-231.54, "y":0.26, "z":-56.36, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c81",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-221.02, "y":0.28, "z":-45.88, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c82",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-217.22, "y":0.28, "z":-43.5, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c83",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-223.17, "y":0.26, "z":-30.46, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c84",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-232.92, "y":0.22, "z":-38.25, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c85",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-236.41, "y":0.24, "z":-29.05, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c86",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-233.04, "y":0.28, "z":-25.05, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c87",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-221.94, "y":0.32, "z":-23.82, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c88",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-221.19, "y":0.45, "z":-18.69, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c89",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-214.18, "y":0.45, "z":-22.11, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c90",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-216.64, "y":0.45, "z":-20.27, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c91",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-222.51, "y":0.31, "z":-12.25, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c92",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-221.55, "y":0.25, "z":-10.74, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c93",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-232.66, "y":0.27, "z":-9.75, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c94",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-242.26, "y":0.27, "z":-6.2, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c95",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-240.59, "y":0.22, "z":-11.08, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c96",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-248.44, "y":0.24, "z":-11.27, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c97",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-252.26, "y":0.32, "z":-11.85, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c98",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-252.8, "y":0.27, "z":-7.54, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c99",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-278.39, "y":0.29, "z":-10.06, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c100",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-295.66, "y":0.29, "z":-9.65, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c101",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-261.85, "y":7.54, "z":-1.31, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c102",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-254.67, "y":4.03, "z":4.89, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c103",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-254.21, "y":4.01, "z":-7.45, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c104",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-252.78, "y":0.27, "z":4.86, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c105",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-247.52, "y":0.27, "z":15.75, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c106",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-232.53, "y":0.27, "z":10.21, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c107",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-224.21, "y":0.25, "z":9.5, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c108",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-276.27, "y":0.29, "z":4.09, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c109",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-275.35, "y":0.16, "z":12.38, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c110",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-274.62, "y":0.2, "z":23.74, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c111",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-262.15, "y":0.2, "z":25.84, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c112",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-258.96, "y":0.25, "z":14.07, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c113",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-283.73, "y":0.25, "z":18.31, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c114",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-291.21, "y":0.27, "z":27.05, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c115",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-295.45, "y":0.34, "z":21.01, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c116",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-278.23, "y":0.29, "z":-21.06, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c117",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-278.29, "y":0.29, "z":-26.95, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c118",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-286.07, "y":0.29, "z":-29.28, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c119",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-285.35, "y":0.29, "z":-22.59, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c120",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-284.56, "y":0.19, "z":-38.97, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c121",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-277.72, "y":0.29, "z":-40.02, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c122",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-268.1, "y":0.19, "z":-34.43, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c123",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-256.16, "y":0.28, "z":-33.17, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c124",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-254.61, "y":0.29, "z":-41.38, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c125",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-260.76, "y":0.2, "z":-44.48, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c126",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-254.25, "y":0.25, "z":-53.31, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c127",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-242.62, "y":0.26, "z":-42.23, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c128",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-238.64, "y":0.26, "z":-42.8, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c129",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"StationFront", "x":-245.47, "y":0.26, "z":-51.69, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c130",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"FashionShop", "x":65.83, "y":0.07, "z":-152.95, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c131",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"FashionShop", "x":65.83, "y":0.07, "z":-135.6, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c132",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"FashionShop", "x":60.86, "y":0.07, "z":-138.77, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c133",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"FashionShop", "x":52.75, "y":0.07, "z":-141.2, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c134",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"FashionShop", "x":55.51, "y":0.07, "z":-147.65, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c135",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"FashionShop", "x":57.43, "y":0.07, "z":-142.68, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c136",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":21.2, "y":-8.53, "z":4.63, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c137",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":10.8, "y":-8.53, "z":0.65, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c138",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":8.76, "y":-8.53, "z":6.69, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c139",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":5.38, "y":-8.55, "z":17.66, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c140",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-0.03, "y":-8.1, "z":3.99, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c141",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":2.77, "y":-8.55, "z":-18.51, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c142",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-3.18, "y":-8.55, "z":-27.89, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c143",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":11.71, "y":-8.55, "z":-33.04, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c144",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":6.85, "y":-8.07, "z":-40.11, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c145",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":41.41, "y":-8.05, "z":-44.78, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c146",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":60.32, "y":-8.37, "z":-45.79, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c147",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":57.69, "y":-8.55, "z":-32.13, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c148",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":49.33, "y":-8.53, "z":-18.46, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c149",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":51.68, "y":-8.53, "z":-25.26, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c150",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":56.34, "y":-3.15, "z":-18.11, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c151",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":59.96, "y":-3.15, "z":-24.14, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c152",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":66, "y":-3.15, "z":-18.06, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c153",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":62.91, "y":-3.14, "z":-26.3, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c154",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":63, "y":-3.14, "z":-36.2, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c155",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":65.23, "y":-3.14, "z":-49.76, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c156",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":55.29, "y":-3.14, "z":-41.2, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c157",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":54.48, "y":-3.14, "z":-31.25, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c158",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":54.53, "y":-3.14, "z":-24.33, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c159",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":50.06, "y":-3.14, "z":-45.33, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c160",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":32.06, "y":-3.14, "z":-45.3, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c161",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":17.39, "y":-3.14, "z":-43.06, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c162",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-0.44, "y":-3.14, "z":-32.85, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c163",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-0.16, "y":-3.14, "z":-13.92, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c164",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-3.78, "y":-3.14, "z":-25.62, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c165",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-0.19, "y":-3.14, "z":4.11, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c166",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":13.17, "y":-3.14, "z":0.43, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c167",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":11.95, "y":-3.14, "z":16.8, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c168",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":-4.89, "y":-3.14, "z":17.42, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c169",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":65.8, "y":2.26, "z":-18.2, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c170",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":56.3, "y":2.26, "z":-18.14, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c171",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":60.02, "y":2.26, "z":-23.8, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c172",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":54.48, "y":2.26, "z":-30.95, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c173",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":63.47, "y":2.26, "z":-47.58, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c174",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":19.03, "y":2.26, "z":-40.29, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c175",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":30.21, "y":2.26, "z":-41.37, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c176",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"ShoppingMall", "x":40.42, "y":2.26, "z":-41.3, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c177",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":65.23, "y":50.01, "z":38.21, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c178",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":99.13, "y":49.01, "z":44.24, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c179",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":112.39, "y":49.01, "z":44.48, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c180",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":120.32, "y":49.01, "z":47.1, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c181",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":127.45, "y":49.01, "z":44.66, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c182",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":120.86, "y":49.01, "z":58.71, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c183",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":50.75, "y":50.05, "z":41.14, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c184",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":33.38, "y":50.07, "z":44.86, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c185",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":33.49, "y":50.07, "z":41.29, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c186",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":29.71, "y":50.07, "z":38.75, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c187",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":40.16, "y":50.07, "z":55.12, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c188",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":40.3, "y":50.03, "z":76.96, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c189",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":29.34, "y":50.03, "z":92.65, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c190",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":41.9, "y":50.05, "z":103.68, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c191",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":47.7, "y":50.03, "z":116.84, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c192",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":57.39, "y":50.05, "z":121.85, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c193",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":70.59, "y":50.47, "z":127.98, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c194",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":80.23, "y":50.01, "z":127.3, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c195",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":90.07, "y":50.01, "z":137.75, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c196",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":100.26, "y":50.01, "z":123.42, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c197",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":124.84, "y":49.06, "z":124.67, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c198",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":123.77, "y":49, "z":125.7, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c199",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":122.01, "y":49.06, "z":123.23, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c200",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":124.94, "y":49.06, "z":119.91, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c201",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":122.97, "y":49.06, "z":119.08, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c202",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":124, "y":49.1, "z":121.26, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c203",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":115.71, "y":49.02, "z":109.86, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c204",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":114.56, "y":49.05, "z":84.6, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c205",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":126.75, "y":52.03, "z":82.67, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c206",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":113.57, "y":52.98, "z":83.98, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c207",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":96.74, "y":52.02, "z":76.68, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c208",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":91.69, "y":51.02, "z":112.7, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c209",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":60.49, "y":51.01, "z":60.49, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c210",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":56.71, "y":51.01, "z":68.74, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c211",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":41.38, "y":50.05, "z":63.49, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c212",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":74.66, "y":50.96, "z":58.3, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c213",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":76.86, "y":52.06, "z":79.74, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c214",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":73.97, "y":52.5, "z":90.47, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c215",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":81.69, "y":52.06, "z":71.72, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+		{
+			"id":"c216",
+			"zone":"everywhere",
+			"condition":
+			{
+				"oncomplete": [
+					{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Park", "x":82.45, "y":52.06, "z":87.17, "compasshidden":false}
+				]
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"STOPcompass"}
+		},
+
+
+
+
+
+
+
+
+
+
+		{
+			"id":"STOPcompass",
+			"zone":"outside",
+			"condition":
+			{
+				"rp":250,
+				"hideprogress":true,
+				"hidepanel":true,
+				"condition":"[Item_HandcuffKey, NoHandcuffs]"
+			},
+			"nextcheckpoint": {"selectortype":"SpecificId", "id":"ENDSCRIPT"}
+		},
+
+		{
+			"id":"STOP",
+			"zone":"outside",
+			"condition":
+			{
+				"rp":500,
+				"hideprogress":true,
+				"hidepanel":true,
+				"condition":"[Item_HandcuffKey, NoHandcuffs]"
+			}
+		},
+
+		{
+			"id":"ENDSCRIPT",
+			"zone":"everywhere",
+			"condition":
+			{
+				"hideprogress":true,
+				"hidepanel":true
+			}
+		}
+	]
+}

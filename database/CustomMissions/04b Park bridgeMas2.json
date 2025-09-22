@@ -1,0 +1,32 @@
+{
+	"title":"d6",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+            "id":"Home_Outside",
+			"areas":[{"type":"sphere","stage":"Apart", "x":1.74, "y":0.00, "z":0.06, "r":50.0, "outlinehidden":true, "compasshidden":true}]
+		},
+		{
+			"id":"f3",
+			"areas":[{"type":"sphere","stage":"Park", "x":113.36, "y":52.98, "z":84.09, "r":2.0, "outlinehidden":true, "compasshidden":true}]
+		}
+        
+	],
+	"checkpoints":
+	[
+
+        {
+			"zone":"f3",
+					"condition": {
+						"rp": 110,
+						"duration": 25.0,
+						"hidepanel": "IfNotCondition",
+						"description": "在公园桥梁中央保持裸体状态进行自慰.",
+						"condition": "[Naked,(Action_MituasiOnani,Action_OnaniNormal,Action_OnaniNeGanimata,Action_OnaniSikoru,Action_OnaniYotuashi,Action_OnaniArmKuri)]",
+						"reset": true
+					}
+		}
+	]
+}

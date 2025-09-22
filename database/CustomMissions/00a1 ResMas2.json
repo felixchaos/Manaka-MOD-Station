@@ -1,0 +1,31 @@
+{
+	"title":"d5",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+			"id":"r4",
+			"areas":[
+			{"type":"sphere","stage":"Residence", "x":33.14, "y":-0.22, "z":-78.89, "r":2.4, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"Residence", "x":33.11, "y":-0.20, "z":-121.28, "r":2.4, "outlinehidden":true, "compasshidden":true}
+			]
+		}
+        
+	],
+	"checkpoints":
+	[
+
+        {
+			"zone":"r4",
+					"condition": {
+						"rp": 70,
+						"duration": 30.0,
+						"hidepanel": "IfNotCondition",
+						"description": "在裸体状态下于人行横道进行自慰.",
+						"condition": "[Naked,(Action_MituasiOnani,Action_OnaniNormal,Action_OnaniNeGanimata,Action_OnaniSikoru,Action_OnaniYotuashi,Action_OnaniArmKuri)]",
+						"reset": false
+					}
+		}
+	]
+}

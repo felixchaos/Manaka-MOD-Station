@@ -1,0 +1,32 @@
+{
+	"title":"d6",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+            "id":"Home_Outside",
+			"areas":[{"type":"sphere","stage":"Apart", "x":1.74, "y":0.00, "z":0.06, "r":50.0, "outlinehidden":true, "compasshidden":true}]
+		},
+		{
+			"id":"f2",
+			"areas":[{"type":"sphere","stage":"Park", "x":123.12, "y":49.06, "z":120.83, "r":7.5, "outlinehidden":true, "compasshidden":true}]
+		}
+        
+	],
+	"checkpoints":
+	[
+
+        {
+			"zone":"f2",
+					"condition": {
+						"rp": 80,
+						"duration": 25.0,
+						"hidepanel": "IfNotCondition",
+						"description": "在公园厕所内保持裸体状态进行自慰.",
+						"condition": "[Naked,(Action_MituasiOnani,Action_OnaniNormal,Action_OnaniNeGanimata,Action_OnaniSikoru,Action_OnaniYotuashi,Action_OnaniArmKuri)]",
+						"reset": true
+					}
+		}
+	]
+}

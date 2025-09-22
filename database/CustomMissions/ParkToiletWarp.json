@@ -1,0 +1,24 @@
+{
+	"title":"Park Toilet Warp",
+	"zones":[
+		{
+			"id":"Park_WarpEntrance",
+			"areas":[{"type":"sphere","stage":"Park", "x":71.44, "y":50.02, "z":25.54, "r":0.5, "outlinehidden":false, "compasshidden":true}]
+		}
+	],
+	"checkpoints":
+	[
+		{
+			"zone":"Park_WarpEntrance",
+			"condition":
+			{
+				"description":"传送至厕所",
+				"duration":3,
+				"condition":"[Action_None]",
+				"oncomplete":[
+					{"type":"setPlayerPosition", "x":113.36, "y":49.05, "z":110.15, "rx":0.00000, "ry":0.19594, "rz":0.00000, "rw":0.98062 }
+				]
+			}
+		}
+	]
+}

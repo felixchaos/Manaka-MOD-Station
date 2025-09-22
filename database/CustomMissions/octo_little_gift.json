@@ -1,0 +1,109 @@
+{
+	"title":"Little Gift",
+	"listmission":true,
+    "addtitleinlist":true,
+    "addtitleinpanel":true,
+	"zones":[
+			{
+			"id":"frontyard",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":-28.93, "y":-0.10, "z":-121.95, "r":0.5,
+				"outlinehidden":false, "compasshidden":false}]
+			},
+
+			{
+			"id":"orgasms_feel_good",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":2.14, "y":-0.11, "z":-80.48, "r":1,
+				"outlinehidden":false, "compasshidden":false}]
+			},
+
+			{
+			"id":"vendingmachine",
+			"areas":[{
+				"type":"sphere",
+				"stage":"Residence", "x":6.21, "y":-0.09, "z":-77.82, "r":0.5,
+				"outlinehidden":false, "compasshidden":false}]
+			}
+		],
+
+
+
+
+
+	"subconditions":[
+		{
+			"id":"panties",
+			"condition":"(Cosplay_m_cosplay_general_upper_race_pants,Cosplay_m_cosplay_general_upper_ultimate_pants,Cosplay_m_cosplay_general_upper_chack_bikini_pants,Cosplay_m_cosplay_general_upper_micro_bikini_pants,Cosplay_m_cosplay_succubus_cosplay_pants,Cosplay_m_cosplay_sister_pants,Cosplay_m_cosplay_cow_pants,Cosplay_m_cosplay_suit_chic_panty,Cosplay_m_cosplay_sweater_pants)"
+		}
+	],
+
+
+
+
+
+	"checkpoints":
+	[
+		{
+			"zone":"frontyard",
+			"condition":
+			{
+				"duration":7,
+				"description":"任务：秘密礼物 挑一条超可爱的内裤穿上，别忘了把你的Ins账号“贴”上去，是谁的战利品一目了然～穿上它，我们马上出发，别担心，这条“宝贝”你可不会留太久哦！",
+				"condition":"[SubCondition_panties]",
+				"itemconditions":[]
+			}
+		},
+
+		{
+			"zone":"orgasms_feel_good",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"咱们找个好地方，给你的礼物安个家吧～",
+				"faildescription":"别急着脱哦，先留着它们陪着你～",
+				"condition":"[SubCondition_panties]"
+			},
+			"condition":
+			{
+				"description":"现在是关键时刻——是时候给你的宝贝加点料了！想怎么玩就怎么玩，随心所欲，尽情享受属于你的专属快感，就在这里，毫无顾忌地释放自己。",
+				"condition":"[SubCondition_panties,Orgasm]"
+			}
+		},
+
+		{
+			"zone":"vendingmachine",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"快去自动贩卖机那儿，看看有什么好东西在等你～",
+				"faildescription":"别急着脱哦，先留着它们陪着你～",
+				"condition":"[SubCondition_panties]"
+			},
+			"condition":
+			{
+				"description":"脱下你的内裤，挂在自动售货机上，留下专属的印记吧～",
+				"condition":"[!SubCondition_panties]"
+			}
+		},
+
+		{
+			"zone":"frontyard",
+			"travelcondition":
+			{
+				"rp":10,
+				"description":"某个幸运的小哥将会大吃一惊呢！好了，时候不早了，回家去吧～",
+				"faildescription":"别再穿回去了，那已经不是你的了哦～",
+				"condition":"[!SubCondition_panties]"
+			},
+			"condition":
+			{
+				"duration":10,
+				"description":"从那阵暴露狂的兴奋里醒过来，你站那儿暗自期待——那个幸运的家伙会不会偷偷给你发个消息，一想到这，你感觉自己的脸颊开始泛红，血液涌上了脸庞……",
+				"condition":"[!SubCondition_panties]"
+			}
+		}
+	]
+}

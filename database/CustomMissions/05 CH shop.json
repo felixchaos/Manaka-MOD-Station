@@ -1,0 +1,38 @@
+{
+	"title":"01con",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+            "id":"Home_Outside",
+			"areas":[{"type":"sphere","stage":"Apart", "x":1.74, "y":0.00, "z":0.06, "r":50.0, "outlinehidden":true, "compasshidden":true}]
+		},
+		{
+			"id":"Fashion",
+			"areas":[{"type":"sphere","stage":"FashionShop", "x":52.78, "y":0.07, "z":-141.18, "r":2.7, "outlinehidden":true, "compasshidden":true}]
+		}
+        
+	],
+	"checkpoints":
+	[
+
+        {
+			"zone":"Fashion",
+					"condition": {
+						"rp": 300,
+						"duration": 10.0,
+						"hidepanel": "IfNotCondition",
+						"description": "将外套留在家中，裸体前往服装店并进入试衣间区域.",
+						"condition": "[Naked]",
+						"itemconditions": [
+							{
+								"type": "Coat",
+								"zone": "Home_Outside"
+							}
+						],
+						"reset": true
+					}
+		}
+	]
+}

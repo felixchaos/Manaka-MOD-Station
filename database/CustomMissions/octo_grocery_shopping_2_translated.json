@@ -1,0 +1,105 @@
+{
+  "title": "Grocery Shopping 2",
+  "zones": [
+    {
+      "id": "convenience_entrance",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "Convenience",
+          "x": 2.56,
+          "y": 0.12,
+          "z": -8.66,
+          "r": 0.5,
+          "outlinehidden": false,
+          "compasshidden": false
+        }
+      ]
+    },
+    {
+      "id": "convenience_drinks",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "Convenience",
+          "x": -3.14,
+          "y": 0.12,
+          "z": -8.34,
+          "r": 0.5,
+          "outlinehidden": false,
+          "compasshidden": false
+        }
+      ]
+    },
+    {
+      "id": "convenience_checkout",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "Convenience",
+          "x": 1.31,
+          "y": 0.12,
+          "z": -8.06,
+          "r": 0.5,
+          "outlinehidden": false,
+          "compasshidden": false
+        }
+      ]
+    }
+  ],
+  "subconditions": [
+    {
+      "id": "skirt",
+      "condition": "(Cosplay_m_cosplay_school_hoodie_skirt,Cosplay_m_cosplay_suit_chic_skirt,Cosplay_m_cosplay_school_gal_skirt)"
+    },
+    {
+      "id": "panties",
+      "condition": "(Cosplay_m_cosplay_general_upper_race_pants,Cosplay_m_cosplay_general_upper_ultimate_pants,Cosplay_m_cosplay_general_upper_chack_bikini_pants,Cosplay_m_cosplay_general_upper_micro_bikini_pants,Cosplay_m_cosplay_succubus_cosplay_pants,Cosplay_m_cosplay_sister_pants,Cosplay_m_cosplay_cow_pants,Cosplay_m_cosplay_suit_chic_panty,Cosplay_m_cosplay_sweater_pants)"
+    },
+    {
+      "id": "vibelow",
+      "condition": "[AdultToy_KuriRotor,VibrationLow]"
+    }
+  ],
+  "checkpoints": [
+    {
+      "zone": "convenience_entrance",
+      "condition": {
+        "duration": 7,
+        "description": "[任务：杂货购物 第2/3部分] 你到了！让我们找点乐子吧。",
+        "condition": "[SubCondition_skirt,SubCondition_vibelow,!(SubCondition_panties)]",
+        "itemconditions": []
+      }
+    },
+    {
+      "zone": "convenience_drinks",
+      "travelcondition": {
+        "rp": 10,
+        "description": "我们去拿一瓶清爽的饮料吧。",
+        "faildescription": "抱歉，必须遵守规则。你暂时还不能脱身呢。<3",
+        "condition": "[SubCondition_skirt,SubCondition_vibelow,!(SubCondition_panties)]"
+      },
+      "condition": {
+        "duration": 20,
+        "description": "你最喜欢的饮料都在最底层的货架上，但你必须弯腰才能拿到。你身后的监控摄像头将获得绝佳的角度来拍摄你的裙底。现在真是不巧没穿内裤，但已经没办法了。<3（屁股扭动动作）",
+        "condition": "[SubCondition_skirt,SubCondition_vibelow,Action_HipShake,!(SubCondition_panties)]",
+        "itemconditions": []
+      }
+    },
+    {
+      "zone": "convenience_checkout",
+      "travelcondition": {
+        "rp": 10,
+        "description": "最好祈祷没人会看监控录像。我们去付钱然后回家吧。",
+        "faildescription": "抱歉，必须遵守规则。你暂时还不能脱身呢。<3",
+        "condition": "[SubCondition_skirt,SubCondition_vibelow,!(SubCondition_panties)]"
+      },
+      "condition": {
+        "duration": 15,
+        "description": "和收银员调情一下吧。没必要掩饰振动器的轰鸣声，他可能早就知道了。（往外面左边看就是第3部分）",
+        "condition": "[SubCondition_skirt,SubCondition_vibelow,!(SubCondition_panties)]",
+        "itemconditions": []
+      }
+    }
+  ]
+}

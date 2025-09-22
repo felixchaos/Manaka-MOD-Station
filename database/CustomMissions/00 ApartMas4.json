@@ -1,0 +1,30 @@
+{
+	"title":"d5",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+			"id":"r4",
+			"areas":[
+			{"type":"sphere","stage":"Mansion", "x":29.44, "y":-0.11, "z":158.36, "r":2.0, "outlinehidden":true, "compasshidden":true}
+			]
+		}
+        
+	],
+	"checkpoints":
+	[
+
+        {
+			"zone":"r4",
+					"condition": {
+						"rp": 110,
+						"duration": 30.0,
+						"hidepanel": "IfNotCondition",
+						"description": "在裸体状态下于三岔路口中心进行自慰或使用按摩棒.",
+						"condition": "[Naked,(Action_MituasiOnani,Action_OnaniNormal,Action_OnaniNeGanimata,Action_OnaniSikoru,Action_OnaniYotuashi,Action_OnaniArmKuri,Action_UseDildoFloorPussy1,Action_UseDildoFloorAnal1,Action_UseDildoWallPussy1,Action_UseDildoWallAnal1,Action_UseDildoWallFella1,Action_SitDildo)]",
+						"reset": false
+					}
+		}
+	]
+}

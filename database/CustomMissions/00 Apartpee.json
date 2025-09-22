@@ -1,0 +1,35 @@
+{
+	"title":"d6",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+			"id":"c4",
+			"areas":[
+			{"type":"sphere","stage":"Mansion", "x":26.97, "y":-0.09, "z":151.77, "r":1.0, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"Mansion", "x":28.19, "y":-0.09, "z":160.84, "r":1.0, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"Mansion", "x":26.03, "y":-0.09, "z":160.83, "r":1.0, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"Mansion", "x":23.92, "y":-0.09, "z":160.60, "r":1.0, "outlinehidden":true, "compasshidden":true},
+			{"type":"sphere","stage":"Mansion", "x":35.08, "y":-0.09, "z":160.79, "r":1.0, "outlinehidden":true, "compasshidden":true}
+			
+			]
+		}
+        
+	],
+	"checkpoints":
+	[
+
+        {
+			"zone":"c4",
+					"condition": {
+						"rp": 90,
+						"duration": 14.0,
+						"hidepanel": "IfNotCondition",
+						"description": "在公寓前裸体以站姿向花盆排尿.",
+						"condition": "[Naked,Action_PeeStand,Peeing]",
+						"reset": true
+					}
+		}
+	]
+}

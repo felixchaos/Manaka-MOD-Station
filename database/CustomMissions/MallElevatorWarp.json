@@ -1,0 +1,25 @@
+{
+	"title":"Mall Elevator Warp",
+	"zones":[
+		{
+			"id":"Mall_Entrance",
+			"areas":[{"type":"sphere","stage":"ShoppingMall", "x":19.47, "y":-8.53, "z":9.57, "r":0.65, "outlinehidden":false, "compasshidden":true}]
+		}
+	],
+	"checkpoints":
+	[
+		{
+			"zone":"Mall_Entrance",
+			"condition":
+			{
+				"rp":5,
+				"description":"传送至一楼尽头电梯处",
+				"duration":3,
+				"condition":"[Action_None]",
+				"oncomplete":[
+					{"type":"setPlayerPosition", "x":46.08, "y":-8.53, "z":-22.61, "rx":0.00000, "ry":0.54353, "rz":0.00000, "rw":0.83939 }
+				]
+			}
+		}
+	]
+}

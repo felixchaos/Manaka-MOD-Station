@@ -1,0 +1,540 @@
+{
+    "title":"Blackmail3",
+    "zones":
+	[	{
+			"id":"teleport",
+			"areas":[{"type":"sphere","stage":"ShoppingMall", "x":56.3, "y":2.26, "z":-21.2, "r":1, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"start",
+			"areas":[{"type":"sphere","stage":"ShoppingMall", "x":56.3, "y":2.26, "z":-22.8, "r":2, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"trash",
+			"areas":[{"type":"sphere","stage":"ShoppingMall", "x":58.5, "y":2.26, "z":-23.8, "r":1, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"thirdFloor",
+			"areas":[{"type":"sphere","stage":"ShoppingMall", "x":58.5, "y":2.26, "z":-23.8, "r":100, "outlinehidden":true, "compasshidden":true}]
+		},
+		{
+			"id":"corner",
+			"areas":[{"type":"sphere","stage":"ShoppingMall", "x":65, "y":2.26, "z":-46, "r":2, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"hallwayStart",
+			"areas":[{"type":"sphere","stage":"ShoppingMall", "x":50.7, "y":2.26, "z":-40.5, "r":2, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"hallway1",
+			"areas":[{"type":"sphere","stage":"ShoppingMall", "x":43.6, "y":2.26, "z":-40.5, "r":2, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"hallway2",
+			"areas":[{"type":"sphere","stage":"ShoppingMall", "x":36.2, "y":2.26, "z":-40.5, "r":2, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"hallway3",
+			"areas":[{"type":"sphere","stage":"ShoppingMall", "x":29.2, "y":2.26, "z":-40.5, "r":2, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"hallwayEnd",
+			"areas":[{"type":"sphere","stage":"ShoppingMall", "x":18.8, "y":2.26, "z":-40.5, "r":2, "outlinehidden":false, "compasshidden":true}]
+		},
+		{
+			"id":"door",
+			"areas":[{"type":"sphere","stage":"ShoppingMall", "x":68.3, "y":2.26, "z":-37.3, "r":2, "outlinehidden":false, "compasshidden":true}]
+		}
+	],
+	"subconditions":
+	[
+		{
+			"id":"startConditions",
+			"condition": "!(Crouching,HandcuffsBack,Blindfolded,Bodypaint,VibrationHigh)"
+		}
+	],
+    "checkpoints":
+	[
+		{
+			"zone":"teleport",
+			"condition":
+			{
+				"description":"【乘人之危】第三部分，需要全套西装A和多个假阳具, 请等待任务触发",
+				"condition":"[SubCondition_startConditions]",
+				"duration":5,
+				"oncomplete":[
+				{"type":"setStage", "daytime":false},
+				{"type":"unequipAllCosplay"},
+				{"type":"setAction", "action":"None"},
+				{"type":"unequipAdultToy", "parts":["Vibrator","TitRotor","KuriRotor"]},
+				{"type":"equipAdultToy", "parts":["Vibrator","TitRotor"]},
+				{"type":"equipCosplay", "parts":["m_cosplay_suit_chic_jacket","m_cosplay_suit_chic_skirt","m_cosplay_suit_chic_shoes"]},				
+				{"type":"setPlayerPosition", "x":56.3, "y":2.26, "z":-22.8, "rx":0, "ry":-0.01, "rz":0, "rw":0.99},
+				{"type":"dropItem", "itemtype":"VibeRemocon", "stage":"Apart", "x":1.5, "y":0, "z":0.5},
+				{"type":"dropItem", "itemtype":"Coat", "stage":"Apart", "x":1.8, "y":0, "z":0.5}]
+				
+			}
+			
+		},
+		{
+			"zone":"start",
+			"condition":
+			{
+				"description":"终于，第三层！你以前来过吗？人是不多，但别以为就轻松了",
+				"duration":8
+			}
+		},
+		{
+			"zone":"trash",
+			"travelcondition":
+			{
+				"description":"作为开幕，看见你旁边的垃圾桶了吗，你懂得"
+			},
+			"condition":
+			{
+				"description":"让你扔什么好呢...嗯...",
+				"duration":5
+			}
+		},
+		{
+			"zone":"trash",
+			"condition":
+			{
+				"description":"裙子，扔掉你的裙子，当然你也可以顺便扔掉你的鞋子，看你",
+				"condition":"!Cosplay_m_cosplay_suit_chic_skirt"
+			}
+		},
+		{
+			"zone":"trash",
+			"condition":
+			{
+				"description":"小穴和屁股完全暴露出来的感觉怎么样？这下可不好躲藏啰",
+				"duration":6
+			}
+		},
+		{
+			"zone":"thirdFloor",
+			"condition":
+			{
+				"description":"我的建议？趴着走或者躲在柱子后面，有点难度但你能做到的",
+				"duration":6
+			}
+		},
+		{
+			"zone":"thirdFloor",
+			"condition":
+			{
+				"description":"花点时间逛逛吧，别被发现了就行",
+				"duration":30
+			}
+		},
+		{
+			"zone":"corner",
+			"travelcondition":
+			{
+				"description":"第一个任务来啰，去Shoezard门口角落那"
+			},
+			"condition":
+			{
+				"description":"这应该比较安全，不过要是不幸被发现了...真遗憾",
+				"duration":5,
+				"oncomplete":[{"type":"setVibrator", "level":"Low"}]
+			}
+		},
+		{
+			"zone":"corner",
+			"condition":
+			{
+				"description":"三足自慰给我看，十五秒计时",
+				"condition":"Action_MituasiOnani",
+				"duration":15
+			}
+		},
+		{
+			"zone":"corner",
+			"condition":
+			{
+				"description":"还想要更多吧？继续仰卧自慰",
+				"condition":"Action_OnaniNeGanimata",
+				"duration":10
+			}
+		},
+		{
+			"zone":"hallwayStart",
+			"travelcondition":
+			{
+				"description":"哈哈，乖宝贝，下一个挑战的地点...那条长廊看起来不错"
+			},
+			"condition":
+			{
+				"description":"小心啰，你不知道会不会突然从哪家店里冒出来一个人呢",
+				"duration":5,
+				"oncomplete":[{"type":"setVibrator", "level":"High"}]
+			}
+		},
+		{
+			"zone":"hallway1",
+			"travelcondition":
+			{
+				"description":"从漫步开始，就当热身",
+				"oncomplete":[{"type":"setVibrator", "level":"Low"}]
+			},
+			"condition":
+			{
+				"description":"要不要再来次仰卧自慰？就在这光天化日之下",
+				"condition":"Action_OnaniNeGanimata",
+				"duration":8,
+				"oncomplete":[{"type":"setVibrator", "level":"High"}]
+			}
+		},
+		{
+			"zone":"hallway2",
+			"travelcondition":
+			{
+				"description":"没人发现你，不是吗？继续沿着长廊走",
+				"oncomplete":[{"type":"setVibrator", "level":"Low"}]
+			},
+			"condition":
+			{
+				"description":"接下来...嗯...把假屌放在地上吧",
+				"itemconditions":[{"type":"DildoFloor","zone":"hallway2"}],
+				"oncomplete":[{"type":"setVibrator", "level":"High"}]
+			}
+		},
+		{
+			"zone":"hallway2",
+
+			"condition":
+			{
+				"description":"现在用屁股骑上去，我不说停你的腰就不能停",
+				"condition":"Action_UseDildoFloorAnal1",
+				"duration":12
+			}
+		},
+		{
+			"zone":"hallway2",
+
+			"condition":
+			{
+				"description":"......停！你还没被发现？真有你的！ ",
+				"duration":5
+			}
+		},
+		{
+			"zone":"hallway3",
+
+			"travelcondition":
+			{
+				"description":"还没走到尽头呢？我们继续！",
+				"oncomplete":[{"type":"setVibrator", "level":"Low"}]
+			},
+			"condition":
+			{
+				"description":"看，又一个垃圾桶......",
+				"duration":5
+			}
+		},
+		{
+			"zone":"hallway3",
+			"condition":
+			{
+				"description":"反正你也跟全裸差不多了，再把夹克脱了又有何妨呢？",
+				"condition":"!Cosplay_m_cosplay_suit_chic_jacket"
+			}
+		},
+		{
+			"zone":"hallway3",
+			"condition":
+			{
+				"description":"终于脱光了，这下你怎么回家呢？",
+				"duration":6
+			}
+		},
+		{
+			"zone":"hallway3",
+			"condition":
+			{
+				"description":"我相信你总会有办法的，现在戴上眼罩",
+				"condition":"Blindfolded",
+				"oncomplete":[{"type":"dropItem", "itemtype":"DildoFloor", "stage":"ShoppingMall", "x":18.8, "y":2.26, "z":-40.5}]
+			}
+		},
+		{
+			"zone":"hallway3",
+			"condition":
+			{
+				"description":"拷住双手把钥匙扔在地上",
+				"condition":"KeyedHandcuffs",
+				"itemconditions":[{"type":"HandcuffKey","zone":"hallway3"}],
+				"oncomplete":[{"type":"setVibrator", "level":"High"}]
+			}
+		},
+		{
+			"zone":"hallwayEnd",
+			"travelcondition":
+			{
+				"description":"我不敢想你心跳得有多快，到长廊尽头去"
+			},
+			"condition":
+			{
+				"description":"哈哈，还好吗？你戴着眼罩能看得清我为你准备的东西吗？",
+				"duration":5
+			}
+		},
+		{
+			"zone":"hallwayEnd",
+			"condition":
+			{
+				"description":"我要你用假屌操上整整一分钟，要是被人看到了？噢...",
+				"condition":"Action_UseDildoFloorAnal1",
+				"duration":20
+			}
+		},
+		{
+			"zone":"hallwayEnd",
+			"condition":
+			{
+				"description":"二十秒！继续！",
+				"condition":"Action_UseDildoFloorAnal1",
+				"duration":20
+			}
+		},
+		{
+			"zone":"hallwayEnd",
+			"condition":
+			{
+				"description":"四十秒！你的屁股感觉怎么样？",
+				"condition":"Action_UseDildoFloorAnal1",
+				"duration":10
+			}
+		},
+		{
+			"zone":"hallwayEnd",
+			"condition":
+			{
+				"description":"还剩十秒！",
+				"condition":"Action_UseDildoFloorAnal1",
+				"duration":5
+			}
+		},
+		{
+			"zone":"hallwayEnd",
+			"condition":
+			{
+				"description":"五秒！",
+				"condition":"Action_UseDildoFloorAnal1",
+				"duration":5,
+				"oncomplete":[{"type":"setVibrator", "level":"Low"}]
+			}
+		},
+		{
+			"zone":"hallwayEnd",
+			"condition":
+			{
+				"description":"时间到！你还记得自己高潮了多少次吗？我数不过来了",
+				"duration":6
+			}
+		},
+		{
+			"zone":"hallway3",
+			"travelcondition":
+			{
+				"description":"你做得比我要求得还好，现在回去捡起钥匙"
+			},
+			"condition":
+			{
+				"description":"你做得比我要求得还好，现在回去捡起钥匙",
+				"condition":"Item_HandcuffKey"
+			}
+		},
+		{
+			"zone":"hallway3",
+			"condition":
+			{
+				"description":"我们继续之前我给你选择的权利，摘下眼罩与否全看你的意愿",
+				"duration":10
+			}
+		},
+		{
+			"zone":"hallway3",
+			"condition":
+			{
+				"description":"准备继续了吗？确认你的手铐再次拷好了，因为接下来...",
+				"duration":5
+			}
+		},
+		{
+			"zone":"hallway3",
+			"condition":
+			{
+				"description":"把手铐钥匙丢垃圾桶里，之后可没有回头路了",
+				"duration":5
+			}
+		},
+		{
+			"zone":"hallway3",
+			"condition":
+			{
+				"description":"那之后怎么解开它们？关我什么事，或许你可以问问警察哈哈，又或者哪个好心肠的路人愿意帮你，但你这幅样子谁知道会不会被怎么样呢？",
+				"duration":5
+			}
+		},
+		{
+			"zone":"hallway3",
+			"condition":
+			{
+				"description":"不管怎么说，给我把钥匙丢掉",
+				"condition":"[KeyedHandcuffs,!Item_HandcuffKey]",
+				"oncomplete":[{"type":"dropItem", "itemtype":"HandcuffKey", "stage":"Apart", "x":1, "y":0, "z":0.5}]
+			}
+		},
+		{
+			"zone":"thirdFloor",
+			"condition":
+			{
+				"description":"结束了，现在你完蛋了，享受全裸回家的路程吧，再见啰",
+				"duration":30
+			}
+		},
+		{
+			"zone":"thirdFloor",
+			"condition":
+			{
+				"description":"开玩笑的，我没那么混蛋，我保证你能回家而不是被送去监狱",
+				"duration":8,
+				"oncomplete":[{"type":"dropItem", "itemtype":"DildoFloor", "stage":"ShoppingMall", "x":68.3, "y":2.26, "z":-37.3}]
+			}
+		},
+		{
+			"zone":"door",
+			"travelcondition":
+			{
+				"description":"还记得一开始让你自慰的地方吗？那旁边有台自动售货机，去那"
+			},
+			"condition":
+			{
+				"description":"你有没有想过为什么我一直知道你在做什么？",
+				"duration":5
+			}
+		},
+		{
+			"zone":"door",
+			"condition":
+			{
+				"description":"这扇门后面就是保安室，监控着整个购物中心",
+				"duration":5,
+				"oncomplete":[{"type":"setVibrator", "level":"High"}]
+			}
+		},
+		{
+			"zone":"door",
+			"condition":
+			{
+				"description":"但在我允许你进来之前，你得证明你信任我",
+				"duration":5
+			}
+		},
+		{
+			"zone":"door",
+			"condition":
+			{
+				"description":"看见地上的假屌了吗，我要看你被它操到昏迷",
+				"duration":8
+			}
+		},
+		{
+			"zone":"door",
+			"condition":
+			{
+				"description":"这次我没开玩笑，你不这么做，我就帮不了你",
+				"condition":"Action_UseDildoFloorAnal1",
+				"duration":15
+			}
+		},
+		{
+			"zone":"door",
+			"condition":
+			{
+				"description":"到现在你还能坚持多久呢？希望我们不要浪费几个小时",
+				"condition":"Action_UseDildoFloorAnal1",
+				"duration":20
+			}
+		},
+		{
+			"zone":"door",
+			"condition":
+			{
+				"description":"快到极限了？你的表情真可爱",
+				"condition":"Action_UseDildoFloorAnal1",
+				"duration":20
+			}
+		},
+		{
+			"zone":"door",
+			"condition":
+			{
+				"description":"哈哈，我猜你已经要爽到昏过去了，还能再高潮一次吗？",
+				"condition":"[Action_UseDildoFloorAnal1,Orgasm]",
+				"duration":3
+			}
+		},
+		{
+			"zone":"door",
+			"condition":
+			{
+				"description":"失去意识了？哈，我可不想为了这事叫救护车",
+				"duration":5,
+				"oncomplete":[
+				{"type":"setStage", "daytime":true},
+				{"type":"setAction", "action":"None"},
+				{"type":"unequipAllCosplay"},
+				{"type":"unlockHandcuffs"},
+				{"type":"setVibrator", "level":"Off"},
+				{"type":"unequipAdultToy", "parts":["Vibrator","TitRotor","KuriRotor"]},
+				{"type":"equipCosplay", "parts":["m_cosplay_suit_chic_shirt","m_cosplay_suit_chic_jacket","m_cosplay_suit_chic_skirt","m_cosplay_suit_chic_panty","m_cosplay_suit_chic_stocking","m_cosplay_suit_chic_shoes"]}]
+			}
+		},
+		{
+			"zone":"door",
+			"condition":
+			{
+				"description":"看，如我承诺的，一套全新的制服！可惜你一整晚都没醒，估计上班要迟到啰",
+				"duration":8
+				
+			}
+		},
+		{
+			"zone":"door",
+			"condition":
+			{
+				"description":"放轻松，我不会告密的，你听我的话，我也是个守信的人",
+				"duration":8
+				
+			}
+		},
+		{
+			"zone":"door",
+			"condition":
+			{
+				"description":"但我知道你这变态其实也乐在其中吧，等我做好下一个计划我还会联系你的，敬请期待哦",
+				"duration":8
+				
+			}
+		},
+		{
+			"zone":"door",
+			"condition":
+			{
+				"description":"故事结束！",
+				"duration":8
+				
+			}
+		}
+		
+		
+	]
+}
+
+
+
+

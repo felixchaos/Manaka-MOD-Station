@@ -1,0 +1,34 @@
+{
+	"title":"Showcase test mission 2",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+			"id":"everywhere1",
+			"areas":[
+				{"type":"sphere","stage":"StationFront", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true}
+			]
+		}
+	],
+	"subconditions":[
+		{
+			"id":"c",
+			"condition":"[Naked,HandcuffsBack,NPCArea]"
+		}
+	],
+	"checkpoints":
+	[
+		{
+			"zone":"everywhere1",
+			"condition": {
+				"rp": 80,
+				"duration": 60.0,
+				"hidepanel": "IfNotCondition",
+				"description": "在行人经过的地点保持裸体状态，自行背铐双手.",
+				"condition": "SubCondition_c",
+				"reset": false
+			}			
+		}
+	]
+}

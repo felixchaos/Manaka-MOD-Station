@@ -1,0 +1,264 @@
+{
+    "title": "Yakuza's Punishment",
+    "listmission":true,
+    "addtitleinlist":true,
+    "addtitleinpanel":true,
+    "zones": [
+        {
+            "id": "seafood_bar_corner",
+            "areas": [
+                {
+                    "type": "sphere",
+                    "stage": "StationFront",
+                    "x": -262.27,
+                    "y": 0.29,
+                    "z": -33.12,
+                    "r": 1.5,
+                    "compasshidden": false
+                }
+            ]
+        },
+        {
+            "id": "van_exposure_spot",
+            "areas": [
+                {
+                    "type": "sphere",
+                    "stage": "StationFront",
+                    "x": -258.93,
+                    "y": 0.19,
+                    "z": -46.76,
+                    "r": 0.7
+                }
+            ]
+        },
+        {
+            "id": "final_humiliation_spot",
+            "areas": [
+                {
+                    "type": "sphere",
+                    "stage": "StationFront",
+                    "x": -242.38,
+                    "y": 0.18,
+                    "z": -46.87,
+                    "r": 0.7
+                }
+            ]
+        },
+        {
+            "id": "stairway_alley",
+            "areas": [
+                {
+                    "type": "sphere",
+                    "stage": "StationFront",
+                    "x": -241.37,
+                    "y": 3.2,
+                    "z": -58.57,
+                    "r": 1.5
+                }
+            ]
+        },
+        {
+            "id": "vending_machine",
+            "areas": [
+                {
+                    "type": "sphere",
+                    "stage": "StationFront",
+                    "x": -223.2,
+                    "y": 0.26,
+                    "z": -47.48,
+                    "r": 1.5
+                }
+            ]
+        },
+        {
+            "id": "light_pole",
+            "areas": [
+                {
+                    "type": "sphere",
+                    "stage": "StationFront",
+                    "x": -261.39,
+                    "y": 0.19,
+                    "z": -35.07,
+                    "r": 0.7,
+                    "outlinehidden": false,
+                    "compasshidden": false
+                }
+            ]
+        },
+        {
+            "id": "map_wide_zone",
+            "areas": [
+                {
+                    "type": "sphere",
+                    "stage": "StationFront",
+                    "x": 0,
+                    "y": 0,
+                    "z": 0,
+                    "r": 1000,
+                    "outlinehidden": true,
+                    "compasshidden": true
+                }
+            ]
+        }
+    ],
+    "subconditions": [
+        {
+            "id": "no_cosplay",
+            "condition": "!(Cosplay_m_cosplay_maid_onepiece,Cosplay_m_cosplay_suit_chic_shirt,Cosplay_m_cosplay_suit_chic_jacket,Cosplay_m_cosplay_suit_chic_skirt,Cosplay_m_cosplay_suit_chic_pants,Cosplay_m_cosplay_suit_luxe_jacket,Cosplay_m_cosplay_suit_luxe_tops,Cosplay_m_cosplay_suit_luxe_pants,Cosplay_m_cosplay_sweater_tops,Cosplay_m_cosplay_glossy_jacket,Cosplay_m_cosplay_glossy_knit,Cosplay_m_cosplay_school_hoodie_hoodie,Cosplay_m_cosplay_school_hoodie_shirt,Cosplay_m_cosplay_school_hoodie_skirt,Cosplay_m_cosplay_school_gal_blazer,Cosplay_m_cosplay_school_gal_shirt_winter,Cosplay_m_cosplay_school_gal_cardigan_winter,Cosplay_m_cosplay_school_gal_skirt,Cosplay_m_cosplay_school_gal_shirt_summer,Cosplay_m_cosplay_school_hoodie_coat)"
+        }
+    ],
+    "checkpoints": [
+        {
+            "zone": "seafood_bar_corner",
+            "condition": {"duration": 5.0, "description": "任务：缄默驯服 白天它平平无奇，唯有夜晚降临时，这个角落才让我感到安心——仿佛它一直在等着我，是时候干点大事了", "condition": "!IsDayTime"}
+        },
+        {
+            "zone": "seafood_bar_corner",
+            "condition": {"duration": 4.0,"description": "（嘿嘿……这个角落……太完美了……）"}
+        },
+        {
+            "zone": "seafood_bar_corner",
+            "condition": {"duration": 5.0,"description": "(脑海里掠过那种被注视的画面，竟让身体隐隐发热，连空气都仿佛变得潮湿起来。)"}
+        },
+        {
+            "zone": "seafood_bar_corner",
+            "condition": {"duration": 30.0,"description": "(渴望越来越强烈，像潮水般涌上来……我几乎无法控制自己，被看见的念头，在脑海中燃烧得越发炽热……是时候了，露出肌肤开始自慰)", "condition": "[(Naked,FrontOpen1,FrontOpen2,BackOpen), (Action_OnaniArmKuri, Action_OnaniYotuashi, Action_OnaniNeGanimata, Action_MituasiOnani, Action_OnaniNormal), SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "seafood_bar_corner",
+            "condition": {"duration": 3.0,"description": "(身后突然响起脚步声……我不敢回头。)"}
+        },
+        {
+            "zone": "seafood_bar_corner",
+            "condition": {"duration": 5.0,"description": "Yakuza: “哼……你们看看，这儿还有人敢乱晃？”"}
+        },
+        {
+            "zone": "seafood_bar_corner",
+            "condition": {"duration": 6.0,"description": "Yakuza: '原来是一个小荡妇在我们地盘上安慰自己的小穴呢。'", "condition": "SubCondition_no_cosplay"}
+        },
+        {
+            "zone": "seafood_bar_corner",
+            "condition": {"duration": 6.0,"description": "Yakuza: '我都录下来了，你这臭婊子。”（他把手机往你脸上塞。）"}
+        },
+        {
+            "zone": "seafood_bar_corner",
+            "condition": {"duration": 6.0,"description": "Yakuza: '这玩意儿放网上可不赖……不过，要是不想出事，你最好乖乖听话。'", "condition": "SubCondition_no_cosplay"}
+        },
+        {
+            "zone": "van_exposure_spot",
+            "travelcondition": {"description": "Yakuza: '今晚你就是咱们地盘的玩物，赶紧给我滚到那辆面包车车上，别想拖延！'"}
+        },
+        {
+            "zone": "van_exposure_spot",
+            "condition": {"duration": 10.0, "description": "Yakuza: '乖乖的……就在那儿别动，好好等着。（他们到底要对我做什么……）", "condition": "SubCondition_no_cosplay"}
+        },
+        {
+            "zone": "van_exposure_spot",
+            "condition": {"duration": 20.0,"description": "Yakuza: '把胸露出来，让所有人看个够。姿势保持住，等我们说你才能动。'", "condition": "[(FrontOpen1,FrontOpen2), SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "van_exposure_spot",
+            "condition": {"duration": 15.0,"description": "Yakuza: '哈哈哈！瞧她那抖样儿！还想藏着掖着，笨女人？屁股也别藏着，露出来！'", "condition": "[(FrontOpen1,FrontOpen2), BackOpen, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "van_exposure_spot",
+            "condition": {"duration": 5.0,"description": "Yakuza: '这才刚开始玩呢。'", "condition": "SubCondition_no_cosplay"}
+        },
+        {
+            "zone": "van_exposure_spot",
+            "condition": {"duration": 8.0, "description": "Yakuza: '既然你这么他妈饥渴，我们帮你解解馋。把这个塞进去。'", "condition": "SubCondition_no_cosplay", "oncomplete": [{"type": "equipAdultToy", "parts": ["Vibrator"]}, {"type": "setVibrator", "level": "High"}]}
+        },
+        {
+            "zone": "van_exposure_spot",
+            "condition": {"duration": 8.0, "description": "（太深了...感觉那种震动在我心底翻腾，越来越强烈……我快要忍不住呻吟出来了……）"}
+        },
+        {
+            "zone": "final_humiliation_spot",
+            "travelcondition": {"description": "Yakuza: '走一走，颤抖的臭婊子！把你的奶子都晾出来，给他们瞧瞧！你要是敢动那个玩具，别怪我手下不留情！'", "faildescription": "Yakuza: '别他妈的给我耍小聪明，露出你的奶子，把手从遥控器上拿开，滚回去重新走过，立刻！我他妈不想说第二次'", "condition": "[(FrontOpen1,FrontOpen2), VibrationHigh, AdultToy_Vibrator, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "final_humiliation_spot",
+            "condition": {"duration": 6.0, "description": "Yakuza: '怎么样？爽不爽？咱们收敛点儿，轻轻来……'", "oncomplete": [{"type": "setVibrator", "level": "Low"}]}
+        },
+        {
+            "zone": "final_humiliation_spot",
+            "condition": {"duration": 5.0, "description": "Yakuza: '给我脱光，趴下来蹲下，让我来教教你怎么做只合格的母狗。'", "condition": "[Naked, Crouching, AdultToy_Vibrator, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "final_humiliation_spot",
+            "condition": {"duration": 20.0,"description": "Yakuza: '现在……像块任人揉捏的欲肉一样给我们求饶吧。”（天啊……我真得求他们了……）（使用土下座或者丁丁来取得原谅）", "condition": "[Naked, (Action_DogTintin, Action_Dogeza), AdultToy_Vibrator, SubCondition_no_cosplay]", "oncomplete": [{"type": "setVibrator", "level": "High"}]}
+        },
+        {
+            "zone": "stairway_alley",
+            "travelcondition": {"description": "Yakuza: '哼……还不错。穿上你那一身没用的破衣服，但别以为能遮住什么。胸脯给我露出来，跟紧我！（我转过身去，那个男人站在楼梯上等我）'", "faildescription": "Yakuza: '难道你发情的脑子就是个装饰吗，你这个蠢女！？我说穿衣服！露乳！把玩具调到最大！把你可怜的屁股移过来好好做!'", "condition": "[!Naked, (FrontOpen1,FrontOpen2), AdultToy_Vibrator, VibrationHigh, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "stairway_alley",
+            "condition": {"duration": 10.0, "description": "Yakuza: '够久了……该去溜达了吧？趴下！'", "condition": "[Crouching, AdultToy_Vibrator, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "stairway_alley",
+            "condition": {"description": "Yakuza: '无聊了……咱们来点刺激的。把你的震动器调到随机档。'", "condition": "[AdultToy_Vibrator, VibrationRandom, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "stairway_alley",
+            "condition": {"description": "Yakuza: '现在，脱光衣服，乖乖去给我们买水……别忘了把遥控器和你那点尊严留在这里，好让你全心全意服侍我们。'", "condition": "[Naked, !Item_VibeRemocon, AdultToy_Vibrator, VibrationRandom, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "vending_machine",
+            "travelcondition": {"description": "Yakuza: '去街对面的自动售货机……希望没人看到你……'", "faildescription": "Yakuza: '你脑子进了狗屎吗！？你这个无脑的荡妇！裸体！带着玩具！而且扔下遥控器！'", "condition": "[Naked, VibrationRandom, AdultToy_Vibrator, !Item_VibeRemocon, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "vending_machine",
+            "condition": {"duration": 6.0, "description": "(赶快……别被人发现……这个玩具……刺激得让我受不了……)", "condition": "[Action_UseBuyMachine, AdultToy_Vibrator, !Item_VibeRemocon, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "stairway_alley",
+            "travelcondition": {"description": "(要是被看见了……我这湿润的模样……这一切快点结束吧。)", "faildescription": "Yakuza: '以为我们不会注意到！？玩具留在里面，你这个蠢婊子！滚回去！'", "condition": "[Naked, VibrationRandom, AdultToy_Vibrator, !Item_VibeRemocon, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "stairway_alley",
+            "condition": {"duration": 10.0,"description": "(他们拿起水，往里加了些白色粉末，然后猛地摇晃起来……)", "condition": "[AdultToy_Vibrator, !Item_VibeRemocon, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "stairway_alley",
+            "condition": {"description": "Yakuza: '喝光，贱人……一滴都别洒了……别碰那个遥控器，等我们说了才准动！'", "condition": "[Action_DrinkWater, AdultToy_Vibrator, !Item_VibeRemocon, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "stairway_alley",
+            "condition": {"description": "Yakuza: '拿着你的遥控器。那破玩意儿你想用就用吧，管他娘的，我们根本不在乎！.'", "condition": "[Item_VibeRemocon, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "stairway_alley",
+            "condition": {"duration": 6.0, "description": "Yakuza: '这水喝了，你保证尿得跟喷泉似的……'", "condition": "SubCondition_no_cosplay"}
+        },
+        {
+            "zone": "light_pole",
+            "travelcondition": {"description": "Yakuza: '现在给我回到店门口的灯柱边，脱光，听清楚了没？'", "faildescription": "Yakuza: '我们允许你穿衣服吗，是吧？你这个蠢狗！回来！'", "condition": "[Naked, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "light_pole",
+            "condition": {"description": "Yakuza: '喜欢这地方吗，你这贱狗？给那杆子撒尿，把它当成你的地盘，发情的母狗！'", "condition": "[Naked, (Action_PeeDog, Action_PeeKaikyaku, Action_PeeStand), Peeing, SubCondition_no_cosplay]"}
+        },
+        {
+            "zone": "light_pole",
+            "condition": {"duration": 15.0, "description": "Yakuza: '就这么给我摆着！他妈的别他妈停下来！”（他们举起手机开始录。）", "condition": "[Naked, (Action_PeeDog, Action_PeeKaikyaku, Action_PeeStand), SubCondition_no_cosplay]", "oncomplete": [{"type": "dropItem", "itemtype": "Coat", "stage": "StationFront", "x": -261.39, "y": 0.19, "z": -35.07}]}
+        },
+        {
+            "zone": "map_wide_zone",
+            "condition": {"duration": 8.0,"description": "Yakuza: '（笑）“他妈的垃圾，跟条流浪狗似的。”（他吐了口唾沫）“现在，给我滚出我们的视线！”'", "condition": "SubCondition_no_cosplay", "reset": false}
+        },
+        {
+            "zone": "map_wide_zone",
+            "condition": {"duration": 8.0,"description": "Yakuza: '那个视频……我们可会好好保存，专门留作我们自己的‘纪念’。'", "condition": "SubCondition_no_cosplay", "reset": false}
+        },
+        {
+            "zone": "map_wide_zone",
+            "condition": {"rp": 3000, "duration": 10.0, "description": "(现在安全了吗？……我应该感觉很糟……但为什么……我怎么全身都湿了……)", "condition": "SubCondition_no_cosplay", "reset": false}
+        },
+        {
+            "zone": "map_wide_zone",
+            "condition": {"duration": 3.0, "description": "——缄默驯服：她终于学会怎么乖了——", "reset": false}
+        }
+    ]
+}

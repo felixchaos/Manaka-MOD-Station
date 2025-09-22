@@ -1,0 +1,34 @@
+{
+	"title":"Showcase test mission 2",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+			"id":"everywhere",
+			"areas":[
+				{"type":"sphere","stage":"Residence", "x":0, "y":0, "z":0, "r":5000, "outlinehidden":true, "compasshidden":true}
+			]
+		}
+	],
+	"subconditions":[
+		{
+			"id":"c",
+			"condition":"[Naked,(Action_UseDildoFloorPussy1,Action_UseDildoFloorAnal1,Action_UseDildoWallPussy1,Action_UseDildoWallAnal1,Action_UseDildoWallFella1,Action_SitDildo),NearNPC]"
+		}
+	],
+	"checkpoints":
+	[
+		{
+			"zone":"everywhere",
+			"condition": {
+				"rp": 120,
+				"duration": 30.0,
+				"hidepanel": "IfNotCondition",
+				"description": "在NPC附近保持裸体状态并使用按摩棒.",
+				"condition": "SubCondition_c",
+				"reset": false
+			}			
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"title":"Showcase test mission 2",
+	"listmission":true,
+	"addtitleinlist":false,
+	"addtitleinpanel":false,
+	"zones":[
+		{
+			"id":"c1",
+			"areas":[
+				
+				{"type":"sphere","stage":"Mansion", "x":34.28, "y":0.00, "z":148.31, "r":2.0, "outlinehidden":true, "compasshidden":true}
+			]
+		}
+	],
+	"subconditions":[
+		{
+			"id":"c",
+			"condition":"[Naked,(Action_UseDildoWallPussy1,Action_UseDildoWallAnal1,Action_UseDildoWallFella1)]"
+		}
+	],
+	"checkpoints":
+	[
+		{
+			"zone":"c1",
+			"condition": {
+				"rp": 90,
+				"duration": 30.0,
+				"hidepanel": "IfNotCondition",
+				"description": "在公寓入口的玻璃门上使用附着式按摩棒（需保持裸体状态）.",
+				"condition": "SubCondition_c",
+				"reset": false
+			}			
+		}
+	]
+}

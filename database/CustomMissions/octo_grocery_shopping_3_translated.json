@@ -1,0 +1,262 @@
+{
+  "title": "Grocery Shopping 3",
+  "zones": [
+    {
+      "id": "home",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "Apart",
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "r": 20,
+          "outlinehidden": true,
+          "compasshidden": true
+        }
+      ]
+    },
+    {
+      "id": "convenience_store_exit",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "Residence",
+          "x": 37.12,
+          "y": -0.09,
+          "z": -90.14,
+          "r": 0.5,
+          "outlinehidden": false,
+          "compasshidden": false
+        }
+      ]
+    },
+    {
+      "id": "friend1_gate",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "Residence",
+          "x": 28.42,
+          "y": -0.11,
+          "z": -87.08,
+          "r": 0.5,
+          "outlinehidden": false,
+          "compasshidden": false
+        }
+      ]
+    },
+    {
+      "id": "friend1_door",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "Residence",
+          "x": 25.87,
+          "y": -0.08,
+          "z": -84.73,
+          "r": 0.5,
+          "outlinehidden": false,
+          "compasshidden": false
+        }
+      ]
+    },
+    {
+      "id": "friend2_gate",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "Residence",
+          "x": 11.12,
+          "y": -0.11,
+          "z": -82.27,
+          "r": 0.5,
+          "outlinehidden": false,
+          "compasshidden": false
+        }
+      ]
+    },
+    {
+      "id": "friend2_door",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "Residence",
+          "x": 13.92,
+          "y": -0.11,
+          "z": -83.7,
+          "r": 0.5,
+          "outlinehidden": false,
+          "compasshidden": false
+        }
+      ]
+    },
+    {
+      "id": "frontyard",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "Residence",
+          "x": -28.89,
+          "y": -0.1,
+          "z": -120.56,
+          "r": 0.5,
+          "outlinehidden": false,
+          "compasshidden": false
+        }
+      ]
+    }
+  ],
+  "subconditions": [
+    {
+      "id": "skirt",
+      "condition": "(Cosplay_m_cosplay_school_hoodie_skirt,Cosplay_m_cosplay_suit_chic_skirt,Cosplay_m_cosplay_school_gal_skirt)"
+    },
+    {
+      "id": "panties",
+      "condition": "(Cosplay_m_cosplay_general_upper_race_pants,Cosplay_m_cosplay_general_upper_ultimate_pants,Cosplay_m_cosplay_general_upper_chack_bikini_pants,Cosplay_m_cosplay_general_upper_micro_bikini_pants,Cosplay_m_cosplay_succubus_cosplay_pants,Cosplay_m_cosplay_sister_pants,Cosplay_m_cosplay_cow_pants,Cosplay_m_cosplay_suit_chic_panty,Cosplay_m_cosplay_sweater_pants)"
+    },
+    {
+      "id": "vibelow",
+      "condition": "[AdultToy_KuriRotor,VibrationLow]"
+    },
+    {
+      "id": "viberandom",
+      "condition": "[AdultToy_KuriRotor,VibrationRandom]"
+    }
+  ],
+  "checkpoints": [
+    {
+      "zone": "convenience_store_exit",
+      "condition": {
+        "duration": 7,
+        "description": "[任务：杂货购物 第3/3部分] 在回家之前，让我们去拜访一位朋友。",
+        "condition": "[SubCondition_skirt,SubCondition_vibelow,!(SubCondition_panties)]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "home"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "friend1_gate",
+      "travelcondition": {
+        "rp": 10,
+        "description": "幸运的是，他们就在街对面。",
+        "faildescription": "抱歉，必须遵守规则。你暂时还不能脱身呢。<3",
+        "condition": "[SubCondition_skirt,SubCondition_vibelow,!(SubCondition_panties)]"
+      },
+      "condition": {
+        "duration": 15,
+        "description": "按响他们的门铃并把你的遥控器交给他们。他们将完全控制你的振动器并自由操作。你有点时间深呼吸并做好心理准备。",
+        "condition": "[SubCondition_skirt,SubCondition_vibelow,!(SubCondition_panties)]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "home"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "friend1_door",
+      "travelcondition": {
+        "rp": 10,
+        "description": "是的，这真的要发生了。按响他们的门铃，让他们知道能对你做什么。（将遥控器设为随机）",
+        "faildescription": "抱歉，必须遵守规则。你暂时还不能脱身呢。<3",
+        "condition": "[SubCondition_skirt,SubCondition_vibelow,!(SubCondition_panties)]"
+      },
+      "condition": {
+        "description": "Ring their door and let them know what they get to do to you. (Set remote to random)",
+        "condition": "[SubCondition_skirt,SubCondition_vibelow,Action_Pinpon,!(SubCondition_panties)]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "home"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "friend2_gate",
+      "travelcondition": {
+        "rp": 10,
+        "description": "你已经能感觉到他们在摆弄遥控器了。记得之后要感谢他们带来的高潮。在这个社区里，让我们再拜访一位朋友。",
+        "faildescription": "抱歉，必须遵守规则。你暂时还不能脱身呢。<3",
+        "condition": "[SubCondition_skirt,SubCondition_viberandom,!(SubCondition_panties)]"
+      },
+      "condition": {
+        "duration": 15,
+        "description": "我觉得你穿得有点过了，我认识一个人会很高兴看到你的样子。为什么不让他们帮你脱掉裙子呢？你已经不需要它了。深呼吸一下，鼓起勇气按响他们的门铃吧。",
+        "condition": "[SubCondition_skirt,SubCondition_viberandom,!(SubCondition_panties)]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "home"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "friend2_door",
+      "travelcondition": {
+        "rp": 10,
+        "description": "有人将迎来一个愉快的惊喜。",
+        "faildescription": "抱歉，必须遵守规则。你暂时还不能脱身呢。<3",
+        "condition": "[SubCondition_skirt,SubCondition_viberandom,!(SubCondition_panties)]"
+      },
+      "condition": {
+        "description": "按响他们的门铃并交出你的裙子。（脱下裙子）",
+        "condition": "[SubCondition_viberandom,Action_Pinpon,!(SubCondition_skirt)]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "home"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "friend2_gate",
+      "travelcondition": {
+        "rp": 10,
+        "description": "当他们脱下你的裙子时，你看到他们眼中的神情了吗？你知道他们之后一定会带着你的身影自我陶醉。",
+        "faildescription": "抱歉，必须遵守规则。你暂时还不能脱身呢。<3",
+        "condition": "[SubCondition_viberandom,!(SubCondition_panties),!(SubCondition_skirt)]"
+      },
+      "condition": {
+        "duration": 7,
+        "description": "我认为这已经是足够的惩罚了，该回家了。",
+        "condition": "[SubCondition_viberandom,!(SubCondition_panties),!(SubCondition_cskirt)]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "home"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "frontyard",
+      "travelcondition": {
+        "rp": 10,
+        "description": "不过你还没有完全脱离危险。我觉得如果有人在你回家的路上抓到你像这样乱走，那他们在你选择的隐蔽地点对你做点什么也是公平的。如果你不想这样，最好不要被抓住。<3",
+        "faildescription": "抱歉，必须遵守规则。你暂时还不能脱身呢。<3",
+        "condition": "[SubCondition_viberandom,!(SubCondition_panties),!(SubCondition_skirt)]"
+      },
+      "condition": {
+        "duration": 15,
+        "description": "收银员可能还在想着你，你在想他会不会之后查看监控录像……",
+        "condition": "[SubCondition_viberandom,!(SubCondition_panties),!(SubCondition_skirt)]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "home"
+          }
+        ]
+      }
+    }
+  ]
+}

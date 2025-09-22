@@ -1,0 +1,53 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs" xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
+  <!-- Product language will be determined from build culture/localization; keep default as zh-CN via build param -->
+  <Package Name="!(loc.AppName)" Manufacturer="!(loc.Manufacturer)" UpgradeCode="5D5E3020-6F1B-4D7E-95C3-DC9E3270A2B3" Language="2052" Version="1.0.2"><MajorUpgrade DowngradeErrorMessage="A newer version is already installed." AllowDowngrades="no" AllowSameVersionUpgrades="yes" />
+    <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLDIR" />
+    <!-- Enable standard InstallDir UI and add Finish page 'Launch' option via publish -->
+    <UI>
+      <ui:WixUI Id="WixUI_InstallDir" />
+      <!-- On Finish: first set WixShellExecTarget, then launch -->
+      <Publish Dialog="ExitDialog" Control="Finish" Event="DoAction" Value="SetWixShellExecTarget" Condition="WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 AND NOT Installed" />
+      <Publish Dialog="ExitDialog" Control="Finish" Event="DoAction" Value="LaunchApplication" Condition="WIXUI_EXITDIALOGOPTIONALCHECKBOX = 1 AND NOT Installed" />
+    </UI>
+
+    <Feature Id="MainFeature" Title="!(loc.AppName)" Level="1">
+      <ComponentGroupRef Id="AppFiles" />
+      <ComponentRef Id="ShortcutComponent" />
+    </Feature>
+
+    
+
+    <DirectoryRef Id="INSTALLDIR">
+      <Component Id="ShortcutComponent" Guid="A6C899C8-63F8-4B88-A1D1-9A0D1DD5B3E4">
+        <Shortcut Id="StartMenuShortcut" Directory="ProgramMenuDir" Name="!(loc.AppName)" WorkingDirectory="INSTALLDIR" Target="[INSTALLDIR]PracticeApp.exe" />
+        <Shortcut Id="DesktopShortcut" Directory="DesktopFolder" Name="!(loc.AppName)" WorkingDirectory="INSTALLDIR" Target="[INSTALLDIR]PracticeApp.exe" />
+        <RegistryValue Root="HKLM" Key="Software\PracticeApp" Name="Installed" Type="integer" Value="1" KeyPath="yes" />
+        <RemoveFolder Id="ProgramMenuDirRemoval" Directory="ProgramMenuDir" On="uninstall" />
+      </Component>
+    </DirectoryRef>
+
+    <!-- Finish page optional checkbox text and default state -->
+  <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOXTEXT" Value="!(loc.LaunchText)" />
+  <Property Id="WIXUI_EXITDIALOGOPTIONALCHECKBOX" Value="1" />
+
+  <!-- Prepare target then launch via WixShellExec (v3 pattern; v6 CLI will convert appropriately) -->
+  <CustomAction Id="SetWixShellExecTarget" Property="WixShellExecTarget" Value="[INSTALLDIR]PracticeApp.exe" />
+  <CustomAction Id="LaunchApplication" DllEntry="WixShellExec" Impersonate="yes" BinaryRef="Wix4UtilCA_X86" />
+
+    <!-- Optional: ARPPRODUCTICON can be added if icon exists in assets and you want ARP/shortcut icon. -->
+
+    <Property Id="ARPCONTACT" Value="!(loc.SupportEmail)" />
+    <Property Id="ARPURLINFOABOUT" Value="!(loc.HomepageUrl)" />
+  
+      <StandardDirectory Id="ProgramFiles64Folder">
+        <!-- Keep physical install folder stable (PracticeApp) to avoid path churn; shortcuts/use display name from localization -->
+        <Directory Id="INSTALLDIR" Name="PracticeApp" />
+      </StandardDirectory>
+      <StandardDirectory Id="ProgramMenuFolder">
+        <Directory Id="ProgramMenuDir" Name="!(loc.AppName)" />
+      </StandardDirectory>
+      <StandardDirectory Id="DesktopFolder" />
+    </Package>
+</Wix>

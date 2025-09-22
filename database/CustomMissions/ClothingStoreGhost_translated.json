@@ -1,0 +1,598 @@
+{
+  "title": "Clothing Store Perverted Ghost",
+	"listmission":true,
+    "addtitleinlist":true,
+    "addtitleinpanel":true,
+  "zones": [
+    {
+      "id": "ClothingStore_Cashier",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "FashionShop",
+          "x": 65.6,
+          "y": 0.09,
+          "z": -152.51,
+          "r": 1.0,
+          "outlinehidden": true,
+          "compasshidden": false
+        }
+      ]
+    },
+    {
+      "id": "ClothingStore_ChangingRoom",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "FashionShop",
+          "x": 52.67,
+          "y": 0.09,
+          "z": -141.22,
+          "r": 0.8,
+          "outlinehidden": false,
+          "compasshidden": false
+        }
+      ]
+    },
+    {
+      "id": "ClothingStore_ChangingRoom_CompassHidden",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "FashionShop",
+          "x": 52.67,
+          "y": 0.09,
+          "z": -141.22,
+          "r": 0.8,
+          "outlinehidden": false,
+          "compasshidden": false
+        }
+      ]
+    },
+    {
+      "id": "ClothingStore_CornerNE",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "FashionShop",
+          "x": 64.13,
+          "y": 0.09,
+          "z": -138.8,
+          "r": 4.5,
+          "outlinehidden": true,
+          "compasshidden": false
+        }
+      ]
+    },
+    {
+      "id": "ClothingStore_CornerSW",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "FashionShop",
+          "x": 57.0,
+          "y": 0.09,
+          "z": -149.83,
+          "r": 3.5,
+          "outlinehidden": true,
+          "compasshidden": false
+        }
+      ]
+    },
+    {
+      "id": "ClothingStore_Area",
+      "areas": [
+        {
+          "type": "sphere",
+          "stage": "FashionShop",
+          "x": 59.75,
+          "y": 0.09,
+          "z": -144.29,
+          "r": 50,
+          "outlinehidden": true,
+          "compasshidden": true
+        }
+      ]
+    }
+  ],
+  "subconditions": [
+    {
+      "id": "Flashing",
+      "condition": "[(FrontOpen1,FrontOpen2,BackOpen)]"
+    },
+    {
+      "id": "VibratorHiLoRand",
+      "condition": "[(VibrationLow,VibrationHigh,VibrationRandom)]"
+    },
+    {
+      "id": "VibratorHiRand",
+      "condition": "[(VibrationHigh,VibrationRandom)]"
+    },
+    {
+      "id": "NakedVib",
+      "condition": "[Naked,SubCondition_VibratorHiLoRand]"
+    },
+    {
+      "id": "DildoSetup",
+      "condition": "[(Action_PutDildoWall,Action_PutDildoFloor)]"
+    },
+    {
+      "id": "UseDildo",
+      "condition": "[(Action_UseDildoFloorPussy1,Action_UseDildoFloorAnal1,Action_UseDildoWallPussy1,Action_UseDildoWallAnal1,Action_UseDildoWallFella1)]"
+    },
+    {
+      "id": "Stealth",
+      "condition": "[!(Watched,ShowingOff)]"
+    },
+    {
+      "id": "Visible",
+      "condition": "[(Watched,ShowingOff)]"
+    },
+    {
+      "id": "PeePose",
+      "condition": "[(Action_PeeStand,Action_PeeKaikyaku,Action_PeeDog)]"
+    }
+  ],
+  "checkpoints": [
+    {
+      "zone": "ClothingStore_ChangingRoom_CompassHidden",
+      "condition": {
+        "rp": 5,
+        "description": "任务：服装店变态幽灵。在暴露时做‘屁股扭动’动作以开始。",
+        "duration": 3,
+        "condition": "[SubCondition_Flashing,Action_HipShake]"
+      }
+    },
+    {
+      "zone": "ClothingStore_CornerNE",
+      "travelcondition": {
+        "rp": 5,
+        "description": "准备：移动到东北角。",
+        "condition": "[]"
+      },
+      "condition": {
+        "rp": 5,
+        "description": "准备：放置一个假阳具。",
+        "duration": 1,
+        "condition": "[]",
+        "itemconditions": [
+          {
+            "type": "DildoAny",
+            "zone": "ClothingStore_CornerNE"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_CornerSW",
+      "travelcondition": {
+        "rp": 5,
+        "description": "准备：移动到西南角。",
+        "condition": "[]"
+      },
+      "condition": {
+        "rp": 5,
+        "description": "准备：放置一个假阳具。",
+        "duration": 1,
+        "condition": "[]",
+        "itemconditions": [
+          {
+            "type": "DildoAny",
+            "zone": "ClothingStore_CornerSW"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_ChangingRoom",
+      "travelcondition": {
+        "rp": 5,
+        "description": "准备：返回更衣室。",
+        "condition": "[]"
+      },
+      "condition": {
+        "rp": 5,
+        "description": "脱下外套并全裸。",
+        "duration": 2,
+        "condition": "[Naked]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_ChangingRoom",
+      "travelcondition": {
+        "description": "返回更衣室。",
+        "condition": "[]"
+      },
+      "condition": {
+        "rp": 5,
+        "description": "打开振动器（任意档位），然后丢下遥控器。",
+        "duration": 2,
+        "condition": "[SubCondition_NakedVib]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_CornerNE",
+      "travelcondition": {
+        "rp": 50,
+        "description": "不被看见地移动到东北角。",
+        "faildescription": "你被看见了。回到更衣室重试。",
+        "condition": "[SubCondition_NakedVib,SubCondition_Stealth]"
+      }
+    },
+    {
+      "zone": "ClothingStore_Area",
+      "condition": {
+        "rp": 100,
+        "reset": false,
+        "description": "在商店内，靠近某人并保持一段时间不被发现。",
+        "duration": 10,
+        "condition": "[SubCondition_NakedVib,SubCondition_Stealth,NearNPC]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_CornerNE",
+      "travelcondition": {
+        "description": "移动到东北角。",
+        "condition": "[]"
+      },
+      "condition": {
+        "rp": 200,
+        "reset": false,
+        "description": "在东北角，被他人看见一段时间。做动作可获得额外积分。",
+        "duration": 6,
+        "condition": "[SubCondition_NakedVib,SubCondition_Visible]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_CornerSW",
+      "travelcondition": {
+        "rp": 50,
+        "description": "不被看见地移动到西南角。",
+        "faildescription": "你被看见了。回到西北角重试。",
+        "condition": "[SubCondition_NakedVib,SubCondition_Stealth]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_Area",
+      "condition": {
+        "rp": 100,
+        "description": "在商店内，在某人附近高潮，但不能被发现。",
+        "duration": 2,
+        "condition": "[SubCondition_NakedVib,SubCondition_Stealth,NearNPC,Orgasm]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_Area",
+      "condition": {
+        "rp": 50,
+        "description": "戴上手铐。",
+        "duration": 2,
+        "condition": "[SubCondition_NakedVib,HandcuffsBack]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_Area",
+      "condition": {
+        "rp": 100,
+        "description": "在商店内戴着手铐，在假阳具上高潮且不被看见。",
+        "duration": 2,
+        "condition": "[SubCondition_NakedVib,SubCondition_Stealth,SubCondition_UseDildo,Orgasm,HandcuffsBack]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_CornerSW",
+      "travelcondition": {
+        "description": "Move to the SW corner.",
+        "condition": "[]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      },
+      "condition": {
+        "rp": 200,
+        "reset": false,
+        "description": "在西南角，被他人看见一段时间。",
+        "duration": 6,
+        "condition": "[SubCondition_NakedVib,SubCondition_Visible]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_Area",
+      "condition": {
+        "rp": 50,
+        "description": "取下手铐。",
+        "duration": 2,
+        "condition": "[SubCondition_NakedVib,NoHandcuffs]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_Area",
+      "condition": {
+        "rp": 300,
+        "reset": false,
+        "description": "在商店内，蒙眼将自己铐在墙/物体上并经历多次高潮。",
+        "duration": 6.5,
+        "condition": "[SubCondition_NakedVib,Blindfolded,Orgasm,HandcuffsObject]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_Area",
+      "condition": {
+        "rp": 10,
+        "description": "取下手铐和眼罩。",
+        "duration": 2,
+        "condition": "[SubCondition_NakedVib,NoHandcuffs,!Blindfolded]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_CornerNE",
+      "travelcondition": {
+        "rp": 25,
+        "description": "移动到东北角。",
+        "condition": "[SubCondition_NakedVib]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      },
+      "condition": {
+        "rp": 5,
+        "description": "喝点水。你可以取下振动器（戴着它们这部分非常难）。",
+        "duration": 2,
+        "condition": "[Naked,Action_DrinkWater]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_Cashier",
+      "travelcondition": {
+        "rp": 75,
+        "description": "不被看见或小便的情况下移动到收银台。",
+        "faildescription": "你被看见了或过早漏尿。回到东北角重试。",
+        "condition": "[Naked,SubCondition_Stealth,!Peeing]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      },
+      "condition": {
+        "rp": 250,
+        "description": "戴上眼罩，然后摆出小便姿势，在收银台小便。",
+        "duration": 5,
+        "condition": "[Naked,Blindfolded,SubCondition_PeePose,Peeing]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_Area",
+      "condition": {
+        "rp": 50,
+        "description": "在被抓到之前快速逃跑，然后摘下眼罩。",
+        "duration": 2,
+        "condition": "[Naked,!Blindfolded]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_Cashier",
+      "travelcondition": {
+        "rp": 50,
+        "description": "挑逗自己到接近高潮，然后回到收银台后面。",
+        "condition": "[Naked]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      },
+      "condition": {
+        "rp": 500,
+        "description": "在收银台后自慰至高潮。",
+        "duration": 2,
+        "condition": "[Naked,Orgasm]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      }
+    },
+    {
+      "zone": "ClothingStore_ChangingRoom",
+      "travelcondition": {
+        "rp": 100,
+        "description": "不被看见地返回更衣室。",
+        "faildescription": "你被看见了。回到收银台重试。",
+        "condition": "[Naked,SubCondition_Stealth]",
+        "itemconditions": [
+          {
+            "type": "Coat",
+            "zone": "ClothingStore_ChangingRoom"
+          },
+          {
+            "type": "VibeRemocon",
+            "zone": "ClothingStore_ChangingRoom"
+          }
+        ]
+      },
+      "condition": {
+        "rp": 2000,
+        "description": "任务结束：穿好衣服并关闭振动器。",
+        "duration": 2,
+        "condition": "[!Naked]"
+      }
+    }
+  ]
+}
