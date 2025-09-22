@@ -3,6 +3,7 @@ from datetime import datetime
 import webbrowser
 
 from src.update_checker import check_for_updates_github
+from src.version import __version__
 
 
 class AboutTab(QtWidgets.QWidget):
@@ -25,7 +26,7 @@ class AboutTab(QtWidgets.QWidget):
         root.addWidget(title)
 
         info = QtWidgets.QLabel(
-            "版本：1.0.3\n作者：FelixChaos\n版权：© 2025 Manaka-MOD-Station", self
+            f"版本：{__version__}\n作者：FelixChaos\n版权：© 2025 Manaka-MOD-Station", self
         )
         info.setAlignment(QtCore.Qt.AlignmentFlag.AlignLeft | QtCore.Qt.AlignmentFlag.AlignTop)
         root.addWidget(info)
@@ -51,7 +52,7 @@ class AboutTab(QtWidgets.QWidget):
         bottom = QtWidgets.QFrame(self)
         bottom.setFrameShape(QtWidgets.QFrame.Shape.StyledPanel)
         b = QtWidgets.QHBoxLayout(bottom)
-        self.lbl_version = QtWidgets.QLabel("当前版本：1.0.3", bottom)
+        self.lbl_version = QtWidgets.QLabel(f"当前版本：{__version__}", bottom)
         self.lbl_last_check = QtWidgets.QLabel("最后检查：从未", bottom)
         b.addWidget(self.lbl_version)
         b.addStretch(1)
