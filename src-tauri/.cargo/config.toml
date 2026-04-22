@@ -1,0 +1,8 @@
+[target.x86_64-pc-windows-msvc]
+runner = 'powershell.exe -NoProfile -ExecutionPolicy Bypass -File .cargo/cargo-runner.ps1'
+
+[target.i686-pc-windows-msvc]
+runner = 'powershell.exe -NoProfile -ExecutionPolicy Bypass -File .cargo/cargo-runner.ps1'
+
+[target.aarch64-pc-windows-msvc]
+runner = 'powershell.exe -NoProfile -ExecutionPolicy Bypass -File .cargo/cargo-runner.ps1'
