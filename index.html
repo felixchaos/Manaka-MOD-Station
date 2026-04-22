@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manaka MOD Station</title>
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      html, #root {
+        height: 100%;
+        background: transparent;
+      }
+      /* Initial background prevents black flash before React mounts */
+      body {
+        height: 100%;
+        font-family: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+        /* Default dark background — matches isDark=true default in App.tsx */
+        /* Prevents white flash before React mounts. Will be overridden by FluentProvider. */
+        background: #1c1c1c;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
