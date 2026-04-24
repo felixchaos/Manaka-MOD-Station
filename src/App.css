@@ -15,27 +15,53 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: transparent;
+  background: var(--app-window-bg);
 }
 
 .app-theme--light {
   color: #111827;
+  --app-window-bg: radial-gradient(circle at top, rgba(255, 255, 255, 0.92), rgba(239, 244, 251, 0.96) 40%, #e8eef7 100%);
   --app-surface: rgba(255, 255, 255, 0.68);
   --app-surface-strong: rgba(255, 255, 255, 0.84);
   --app-stroke: rgba(15, 23, 42, 0.08);
   --app-muted: rgba(15, 23, 42, 0.66);
   --app-subtle: rgba(15, 23, 42, 0.52);
   --app-shadow: 0 18px 48px rgba(15, 23, 42, 0.1);
+  --editor-border: rgba(15, 23, 42, 0.1);
+  --editor-surface: rgba(255, 255, 255, 0.92);
+  --editor-bg: #eef2f7;
+  --editor-toolbar-bg: rgba(248, 250, 252, 0.92);
+  --editor-tab-bg: rgba(226, 232, 240, 0.82);
+  --editor-tab-active: rgba(255, 255, 255, 0.98);
+  --editor-sidebar-bg: rgba(248, 250, 252, 0.9);
+  --editor-panel-bg: rgba(248, 250, 252, 0.94);
+  --editor-muted: rgba(15, 23, 42, 0.62);
+  --editor-danger-border: rgba(196, 43, 28, 0.38);
+  --editor-danger-bg: rgba(196, 43, 28, 0.12);
+  --editor-danger: #c42b1c;
 }
 
 .app-theme--dark {
   color: #f3f4f6;
+  --app-window-bg: radial-gradient(circle at top, rgba(42, 52, 36, 0.88), rgba(23, 27, 21, 0.96) 35%, #111315 100%);
   --app-surface: rgba(24, 24, 28, 0.58);
   --app-surface-strong: rgba(34, 34, 38, 0.8);
   --app-stroke: rgba(255, 255, 255, 0.08);
   --app-muted: rgba(255, 255, 255, 0.72);
   --app-subtle: rgba(255, 255, 255, 0.5);
   --app-shadow: 0 18px 48px rgba(0, 0, 0, 0.24);
+  --editor-border: rgba(255, 255, 255, 0.08);
+  --editor-surface: rgba(19, 22, 27, 0.92);
+  --editor-bg: #111216;
+  --editor-toolbar-bg: rgba(24, 26, 31, 0.96);
+  --editor-tab-bg: rgba(22, 23, 27, 0.9);
+  --editor-tab-active: rgba(31, 33, 40, 0.96);
+  --editor-sidebar-bg: rgba(21, 23, 28, 0.94);
+  --editor-panel-bg: rgba(21, 23, 28, 0.96);
+  --editor-muted: rgba(255, 255, 255, 0.68);
+  --editor-danger-border: rgba(255, 153, 164, 0.36);
+  --editor-danger-bg: rgba(255, 153, 164, 0.12);
+  --editor-danger: #ff99a4;
 }
 
 * {
@@ -74,7 +100,7 @@ body,
 }
 
 body {
-  background: transparent;
+  background: #111315;
 }
 
 button,
@@ -104,7 +130,7 @@ textarea {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background: transparent;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0));
   position: relative;
 }
 
@@ -153,6 +179,14 @@ textarea {
   gap: 8px;
   flex: 1;
   min-width: 0;
+}
+
+.titlebar__icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  image-rendering: pixelated;
 }
 
 .titlebar__title {

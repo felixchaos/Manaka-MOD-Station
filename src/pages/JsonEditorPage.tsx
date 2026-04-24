@@ -12,7 +12,6 @@ import {
   Input,
   Spinner,
   Select,
-  tokens,
   Badge,
   Text,
 } from "@fluentui/react-components";
@@ -212,18 +211,18 @@ export function JsonEditorPage({ initialFile, isDark, onActiveFileChange, modLib
     }
 
     const themeVars = {
-      "--editor-border": tokens.colorNeutralStroke2,
-      "--editor-surface": tokens.colorNeutralBackground2,
-      "--editor-bg": isDark ? "#111216" : "#f5f6f8",
-      "--editor-toolbar-bg": isDark ? "#181a1f" : "#f8fafc",
-      "--editor-tab-bg": isDark ? "#16171b" : "#eef1f5",
-      "--editor-tab-active": isDark ? "#1f2128" : "#ffffff",
-      "--editor-sidebar-bg": isDark ? "#15171c" : "#f8fafc",
-      "--editor-panel-bg": isDark ? "#15171c" : "#f8fafc",
-      "--editor-muted": tokens.colorNeutralForeground3,
-      "--editor-danger-border": tokens.colorStatusDangerBorder1,
-      "--editor-danger-bg": tokens.colorStatusDangerBackground1,
-      "--editor-danger": tokens.colorStatusDangerForeground1,
+      "--editor-border": isDark ? "rgba(255, 255, 255, 0.08)" : "rgba(15, 23, 42, 0.1)",
+      "--editor-surface": isDark ? "rgba(19, 22, 27, 0.92)" : "rgba(255, 255, 255, 0.92)",
+      "--editor-bg": isDark ? "#111216" : "#eef2f7",
+      "--editor-toolbar-bg": isDark ? "rgba(24, 26, 31, 0.96)" : "rgba(248, 250, 252, 0.92)",
+      "--editor-tab-bg": isDark ? "rgba(22, 23, 27, 0.9)" : "rgba(226, 232, 240, 0.82)",
+      "--editor-tab-active": isDark ? "rgba(31, 33, 40, 0.96)" : "rgba(255, 255, 255, 0.98)",
+      "--editor-sidebar-bg": isDark ? "rgba(21, 23, 28, 0.94)" : "rgba(248, 250, 252, 0.9)",
+      "--editor-panel-bg": isDark ? "rgba(21, 23, 28, 0.96)" : "rgba(248, 250, 252, 0.94)",
+      "--editor-muted": isDark ? "rgba(255, 255, 255, 0.68)" : "rgba(15, 23, 42, 0.62)",
+      "--editor-danger-border": isDark ? "rgba(255, 153, 164, 0.36)" : "rgba(196, 43, 28, 0.38)",
+      "--editor-danger-bg": isDark ? "rgba(255, 153, 164, 0.12)" : "rgba(196, 43, 28, 0.12)",
+      "--editor-danger": isDark ? "#ff99a4" : "#c42b1c",
     };
 
     for (const [key, value] of Object.entries(themeVars)) {

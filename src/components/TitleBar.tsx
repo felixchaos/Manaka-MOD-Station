@@ -1,11 +1,11 @@
 import { MouseEvent, useEffect, useState } from "react";
-import { tokens } from "@fluentui/react-components";
 import {
   SubtractRegular,
   SquareRegular,
   DismissRegular,
 } from "@fluentui/react-icons";
 import { getCurrentWindow, Window } from "@tauri-apps/api/window";
+import appIcon from "../assets/app-icon.png";
 
 interface TitleBarProps {
   isDark: boolean;
@@ -57,20 +57,7 @@ export function TitleBar({ isDark }: TitleBarProps) {
   return (
     <div className={`titlebar ${isDark ? "titlebar--dark" : "titlebar--light"}`} onDoubleClick={handleTitlebarDoubleClick}>
       <div className="titlebar__brand titlebar__drag" data-tauri-drag-region onMouseDown={(event) => void handleStartDragging(event)}>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-          <circle cx="12" cy="12" r="10" fill={tokens.colorBrandBackground} />
-          <text
-            x="12"
-            y="16"
-            textAnchor="middle"
-            fill="white"
-            fontSize="10"
-            fontWeight="bold"
-            fontFamily="Segoe UI"
-          >
-            M
-          </text>
-        </svg>
+        <img className="titlebar__icon" src={appIcon} alt="" draggable={false} />
         <span className="titlebar__title">Manaka MOD Station</span>
       </div>
 

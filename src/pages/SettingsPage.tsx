@@ -16,6 +16,7 @@ import {
   ArrowSyncRegular,
   OpenRegular,
 } from "@fluentui/react-icons";
+import { relaunch } from "@tauri-apps/plugin-process";
 import { check, Update } from "@tauri-apps/plugin-updater";
 import { useTranslation } from "react-i18next";
 import {
@@ -111,6 +112,7 @@ export function SettingsPage({ settings, onSettingsChange }: SettingsPageProps) 
     setInstallingUpdate(true);
     try {
       await availableUpdate.downloadAndInstall();
+      await relaunch();
     } catch {
       setInstallingUpdate(false);
       setStatus(t("settings_update_install_failed"));

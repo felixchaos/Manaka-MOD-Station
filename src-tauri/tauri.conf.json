@@ -47,7 +47,7 @@
   },
   "plugins": {
     "updater": {
-      "pubkey": "untrusted comment: minisign public key: 59BF62C099EE8613\nRWQThu6ZwGK/Wdq3ut13MW9skAF29vsmKEkNbr9c+R6DRMHP4EdKOAZt",
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDU5QkY2MkMwOTlFRTg2MTMKUldRVGh1Nlp3R0svV2RxM3V0MTNNVzlzYkFGMjl2c21LRWtOYnI5YytSNkRSTUhQNEVkS09BWnQK",
       "endpoints": [
         "https://github.com/felixchaos/Manaka-MOD-Station/releases/latest/download/latest.json"
       ],

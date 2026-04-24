@@ -1,12 +1,15 @@
 import { useEffect, useMemo, useState } from "react";
 import {
   FluentProvider,
+  RendererProvider,
+  createDOMRenderer,
   createDarkTheme,
   createLightTheme,
   BrandVariants,
   Theme,
 } from "@fluentui/react-components";
 import { Dialog, DialogActions, DialogBody, DialogContent, DialogSurface, DialogTitle, Button } from "@fluentui/react-components";
+import { relaunch } from "@tauri-apps/plugin-process";
 import { check, Update } from "@tauri-apps/plugin-updater";
 import { getSystemAccentColor, getSystemDarkMode, loadSettings, Settings } from "./api/tauri";
 import i18n from "./i18n";
@@ -64,6 +67,19 @@ function buildBrandVariants(accentColor: string): BrandVariants {
   };
 }
 
+function getCspNonce() {
+  if (typeof document === "undefined") {
+    return undefined;
+  }
+
+  const styleNonce = (document.querySelector("style[nonce]") as HTMLStyleElement | null)?.nonce;
+  const scriptNonce = (document.querySelector("script[nonce]") as HTMLScriptElement | null)?.nonce;
+
+  return styleNonce
+    || scriptNonce
+    || undefined;
+}
+
 export default function App() {
   const [settings, setSettings] = useState<Settings | null>(null);
   const [systemDark, setSystemDark] = useState(true);
@@ -97,51 +113,61 @@ export default function App() {
   const lightTheme: Theme = useMemo(() => createLightTheme(brand), [brand]);
   const darkTheme: Theme = useMemo(() => createDarkTheme(brand), [brand]);
   const theme = isDark ? darkTheme : lightTheme;
+  const renderer = useMemo(() => {
+    const nonce = getCspNonce();
+    return createDOMRenderer(
+      document,
+      nonce ? { styleElementAttributes: { nonce } } : undefined,
+    );
+  }, []);
 
   const handleInstallStartupUpdate = async () => {
     if (!startupUpdate) return;
     setInstallingStartupUpdate(true);
     try {
       await startupUpdate.downloadAndInstall();
+      await relaunch();
     } catch {
       setInstallingStartupUpdate(false);
     }
   };
 
   return (
-    <FluentProvider className={`app-root app-theme--${isDark ? "dark" : "light"}`} theme={theme} style={{ height: "100vh", display: "flex", flexDirection: "column", background: "transparent" }}>
-      <AppShell
-        settings={settings}
-        onSettingsChange={(s: Settings) => {
-          setSettings(s);
-          Promise.all([getSystemDarkMode(), getSystemAccentColor()]).then(([dark, accent]) => {
-            setSystemDark(dark);
-            setAccentColor(accent);
-          });
-          i18n.changeLanguage(s.language);
-        }}
-        isDark={isDark}
-      />
-      <Dialog open={!!startupUpdate} onOpenChange={(_, data) => !data.open && setStartupUpdate(null)}>
-        <DialogSurface>
-          <DialogBody>
-            <DialogTitle>{i18n.t("settings_update_available")}</DialogTitle>
-            <DialogContent>
-              {startupUpdate
-                ? i18n.t("settings_startup_update_prompt", { version: startupUpdate.version })
-                : ""}
-            </DialogContent>
-            <DialogActions>
-              <Button appearance="secondary" onClick={() => setStartupUpdate(null)}>
-                {i18n.t("cancel")}
-              </Button>
-              <Button appearance="primary" onClick={handleInstallStartupUpdate} disabled={installingStartupUpdate}>
-                {installingStartupUpdate ? i18n.t("settings_update_installing") : i18n.t("settings_update_install_now")}
-              </Button>
-            </DialogActions>
-          </DialogBody>
-        </DialogSurface>
-      </Dialog>
-    </FluentProvider>
+    <RendererProvider renderer={renderer}>
+      <FluentProvider className={`app-root app-theme--${isDark ? "dark" : "light"}`} theme={theme} style={{ height: "100vh", display: "flex", flexDirection: "column", background: "transparent" }}>
+        <AppShell
+          settings={settings}
+          onSettingsChange={(s: Settings) => {
+            setSettings(s);
+            Promise.all([getSystemDarkMode(), getSystemAccentColor()]).then(([dark, accent]) => {
+              setSystemDark(dark);
+              setAccentColor(accent);
+            });
+            i18n.changeLanguage(s.language);
+          }}
+          isDark={isDark}
+        />
+        <Dialog open={!!startupUpdate} onOpenChange={(_, data) => !data.open && setStartupUpdate(null)}>
+          <DialogSurface>
+            <DialogBody>
+              <DialogTitle>{i18n.t("settings_update_available")}</DialogTitle>
+              <DialogContent>
+                {startupUpdate
+                  ? i18n.t("settings_startup_update_prompt", { version: startupUpdate.version })
+                  : ""}
+              </DialogContent>
+              <DialogActions>
+                <Button appearance="secondary" onClick={() => setStartupUpdate(null)}>
+                  {i18n.t("cancel")}
+                </Button>
+                <Button appearance="primary" onClick={handleInstallStartupUpdate} disabled={installingStartupUpdate}>
+                  {installingStartupUpdate ? i18n.t("settings_update_installing") : i18n.t("settings_update_install_now")}
+                </Button>
+              </DialogActions>
+            </DialogBody>
+          </DialogSurface>
+        </Dialog>
+      </FluentProvider>
+    </RendererProvider>
   );
 }
